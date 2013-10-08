@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cprover>
+<program>CBMC 4.5</program>
+<message type="STATUS-MESSAGE">
+  <location file="/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/PacemakerModel1.c">
+    <file>/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/PacemakerModel1.c</file>
+    <line/>
+    <function/>
+  </location>
+  <text>Parsing</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <location file="/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/CommonDeclarations.c">
+    <file>/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/CommonDeclarations.c</file>
+    <line/>
+    <function/>
+  </location>
+  <text>Parsing</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <location file="/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/DummyMain.c">
+    <file>/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/DummyMain.c</file>
+    <line/>
+    <function/>
+  </location>
+  <text>Parsing</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <location file="/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/PacemakerModel2.c">
+    <file>/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/PacemakerModel2.c</file>
+    <line/>
+    <function/>
+  </location>
+  <text>Parsing</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Converting</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking CommonDeclarations</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking DummyMain</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking PacemakerModel1</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking PacemakerModel2</text>
+</message>
+
+<message type="ERROR">
+  <text>main symbol `PacemakerModel2_model2Verification' not found</text>
+</message>
+
+</cprover>
+<?xml version="1.0" encoding="UTF-8" ?>
+<cprover>
+<program>CBMC 4.5</program>
+<message type="STATUS-MESSAGE">
+  <location file="/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/PacemakerModel1.c">
+    <file>/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/PacemakerModel1.c</file>
+    <line/>
+    <function/>
+  </location>
+  <text>Parsing</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <location file="/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/CommonDeclarations.c">
+    <file>/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/CommonDeclarations.c</file>
+    <line/>
+    <function/>
+  </location>
+  <text>Parsing</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <location file="/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/DummyMain.c">
+    <file>/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/DummyMain.c</file>
+    <line/>
+    <function/>
+  </location>
+  <text>Parsing</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <location file="/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/PacemakerModel2.c">
+    <file>/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/PacemakerModel2.c</file>
+    <line/>
+    <function/>
+  </location>
+  <text>Parsing</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Converting</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking CommonDeclarations</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking DummyMain</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking PacemakerModel1</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking PacemakerModel2</text>
+</message>
+
+<message type="ERROR">
+  <text>main symbol `PacemakerModel2_model2Verification' not found</text>
+</message>
+
+</cprover>
+<?xml version="1.0" encoding="UTF-8" ?>
+<cprover>
+<program>CBMC 4.5</program>
+<message type="STATUS-MESSAGE">
+  <location file="/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/PacemakerModel1.c">
+    <file>/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/PacemakerModel1.c</file>
+    <line/>
+    <function/>
+  </location>
+  <text>Parsing</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <location file="/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/CommonDeclarations.c">
+    <file>/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/CommonDeclarations.c</file>
+    <line/>
+    <function/>
+  </location>
+  <text>Parsing</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <location file="/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/DummyMain.c">
+    <file>/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/DummyMain.c</file>
+    <line/>
+    <function/>
+  </location>
+  <text>Parsing</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <location file="/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/PacemakerModel2.c">
+    <file>/home/zaur/Documents/Fortiss/PacemakerModel/solutions/pacemakermodel/source_gen/pacemakermodel/model1/PacemakerModel2.c</file>
+    <line/>
+    <function/>
+  </location>
+  <text>Parsing</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Converting</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking CommonDeclarations</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking DummyMain</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking PacemakerModel1</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking PacemakerModel2</text>
+</message>
+
+<message type="ERROR">
+  <text>main symbol `PacemakerModel2_model2Verification' not found</text>
+</message>
+
+</cprover>
