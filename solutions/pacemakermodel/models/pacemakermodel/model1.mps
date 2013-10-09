@@ -1176,6 +1176,12 @@
           </node>
         </node>
       </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="5032647542476918571" nodeInfo="ng">
+        <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="5032647542476918572" nodeInfo="ng" />
+        <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="5032647542476919265" nodeInfo="ng">
+          <link role="target" roleId="26ao.439567521322959431" targetNodeId="5032647542476914183" resolveInfo="vrp" />
+        </node>
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="5032647542476689563" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="LRL" />
@@ -1196,6 +1202,12 @@
           </node>
         </node>
       </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="5032647542476917188" nodeInfo="ng">
+        <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="5032647542476917189" nodeInfo="ng" />
+        <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="5032647542476917882" nodeInfo="ng">
+          <link role="target" roleId="26ao.439567521322959431" targetNodeId="5032647542476914105" resolveInfo="lrl" />
+        </node>
+      </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5032647542476700444" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1381309421998_4" />
@@ -1205,12 +1217,24 @@
       <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="5032647542476685936" resolveInfo="pacing" />
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="5032647542476705717" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="sense" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="5032647542477014582" nodeInfo="ng">
+          <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="5032647542477014583" nodeInfo="ng" />
+          <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="5032647542477014590" nodeInfo="ng">
+            <link role="target" roleId="26ao.439567521322959431" targetNodeId="5032647542476908408" resolveInfo="senseVentricular" />
+          </node>
+        </node>
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="5032647542476482406" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="tick" />
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.OutEvent" typeId="clqz.4643433264760980254" id="5032647542476481908" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="pace" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="5032647542477014564" nodeInfo="ng">
+          <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="5032647542477014579" nodeInfo="ng">
+            <link role="target" roleId="26ao.439567521322959431" targetNodeId="5032647542476909090" resolveInfo="paceVentricles" />
+          </node>
+          <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="5032647542477014572" nodeInfo="ng" />
+        </node>
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="5032647542476481916" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="timeSinceLastPace" />
@@ -1248,6 +1272,12 @@
               </node>
             </node>
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="5032647542477014593" nodeInfo="ng">
+            <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="5032647542477014594" nodeInfo="ng" />
+            <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="5032647542477015287" nodeInfo="ng">
+              <link role="target" roleId="26ao.439567521322959431" targetNodeId="5032647542476909196" resolveInfo="ignoreVrpSens" />
+            </node>
+          </node>
         </node>
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5032647542476709370" nodeInfo="ng">
           <link role="targetState" roleId="clqz.5778488248013533913" targetNodeId="5032647542476482372" resolveInfo="waiting" />
@@ -1273,6 +1303,12 @@
                   <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5032647542476481916" resolveInfo="timeSinceLastPace" />
                 </node>
               </node>
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="5032647542477016654" nodeInfo="ng">
+            <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="5032647542477016655" nodeInfo="ng" />
+            <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="5032647542477017340" nodeInfo="ng">
+              <link role="target" roleId="26ao.439567521322959431" targetNodeId="5032647542476909137" resolveInfo="inhibit" />
             </node>
           </node>
         </node>
@@ -1312,6 +1348,12 @@
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="5032647542476689563" resolveInfo="LRL" />
             </node>
           </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="5032647542477021535" nodeInfo="ng">
+            <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="5032647542477021536" nodeInfo="ng" />
+            <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="5032647542477022221" nodeInfo="ng">
+              <link role="target" roleId="26ao.439567521322959431" targetNodeId="5032647542476909267" resolveInfo="pace" />
+            </node>
+          </node>
         </node>
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5032647542476686545" nodeInfo="ng" />
@@ -1321,6 +1363,12 @@
           <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="5032647542476685973" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.SendOutEventStatement" typeId="clqz.8786207748510013887" id="5032647542476685978" nodeInfo="ng">
               <link role="event" roleId="clqz.8786207748510013889" targetNodeId="5032647542476481908" resolveInfo="pace" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="5032647542477022224" nodeInfo="ng">
+                <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="5032647542477022225" nodeInfo="ng" />
+                <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="5032647542477022232" nodeInfo="ng">
+                  <link role="target" roleId="26ao.439567521322959431" targetNodeId="5032647542476909267" resolveInfo="pace" />
+                </node>
+              </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5032647542476685987" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5032647542476686003" nodeInfo="ng">
@@ -1352,6 +1400,8 @@
         </node>
       </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5032647542476706118" nodeInfo="ng" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5032647542477022235" nodeInfo="ng" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5032647542477022396" nodeInfo="ng" />
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5032647542476706167" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5032647542476483003" nodeInfo="ng">
