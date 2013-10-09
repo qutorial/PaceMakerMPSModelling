@@ -12,9 +12,7 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4cc2a49-26ee-4710-bb49-c356f88f8275" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/pacemakermodel/models/pacemakermodel/model1.mps" afterPath="$PROJECT_DIR$/solutions/pacemakermodel/models/pacemakermodel/model1.mps" />
-    </list>
+    <list default="true" id="f4cc2a49-26ee-4710-bb49-c356f88f8275" name="Default" comment="" />
     <ignored path="org.fortiss.pacemakermodel.iws" />
     <ignored path=".mps/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
