@@ -1178,7 +1178,7 @@
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="5032647542476689563" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="lrl" />
+      <property name="name" nameId="tpck.1169194664001" value="LRL" />
       <node role="type" roleId="mj1l.318113533128716676" type="mj1l.UnsignedInt16tType" typeId="mj1l.8463282783691618466" id="5032647542476689561" nodeInfo="ng">
         <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
         <property name="const" nameId="mj1l.2941277002445651368" value="true" />
@@ -1283,7 +1283,7 @@
           </node>
           <node role="guard" roleId="clqz.5778488248013533903" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="5032647542476714661" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="5032647542476715188" nodeInfo="ng">
-              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="5032647542476689563" resolveInfo="lrl" />
+              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="5032647542476689563" resolveInfo="LRL" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5032647542476714652" nodeInfo="ng">
               <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5032647542476481916" resolveInfo="timeSinceLastPace" />
@@ -1309,7 +1309,7 @@
               <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5032647542476481916" resolveInfo="timeSinceLastPace" />
             </node>
             <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="5032647542476719870" nodeInfo="ng">
-              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="5032647542476689563" resolveInfo="lrl" />
+              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="5032647542476689563" resolveInfo="LRL" />
             </node>
           </node>
         </node>
@@ -1360,10 +1360,114 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5032647542476483240" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1381309126600_2" />
     </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="5032647542476911387" nodeInfo="ng">
+      <property name="showTraces" nameId="26ao.3348865852193251354" value="true" />
+      <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="5032647542476912068" nodeInfo="ng">
+        <link role="provider" roleId="26ao.439567521322959423" targetNodeId="5032647542476723514" resolveInfo="PacemakerModel3_VVI_Requirements" />
+      </node>
+    </node>
   </root>
   <root type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="5032647542476723514" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="VVI_Requirements" />
+    <property name="name" nameId="tpck.1169194664001" value="PacemakerModel3_VVI_Requirements" />
     <link role="config" roleId="2c95.6657644269295214800" targetNodeId="5785245534400491065" resolveInfo="DocumentConfiguration" />
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5032647542476914105" nodeInfo="ng">
+      <property name="summmary" nameId="75wo.3402431285977818823" value="LRL" />
+      <property name="name" nameId="tpck.1169194664001" value="lrl" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="5032647542476914106" nodeInfo="ng" />
+      <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="5032647542476914107" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5032647542476914108" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5032647542476914109" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5032647542476914110" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Allow to define lower rate limit" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5032647542476914183" nodeInfo="ng">
+      <property name="summmary" nameId="75wo.3402431285977818823" value="VRP" />
+      <property name="name" nameId="tpck.1169194664001" value="vrp" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="5032647542476914184" nodeInfo="ng" />
+      <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="5032647542476914185" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5032647542476914186" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5032647542476914187" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5032647542476914188" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Allow to define ventricualar refractory period" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5032647542476908408" nodeInfo="ng">
+      <property name="summmary" nameId="75wo.3402431285977818823" value="Sense ventricular pacing" />
+      <property name="name" nameId="tpck.1169194664001" value="senseVentricular" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="5032647542476908409" nodeInfo="ng" />
+      <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="5032647542476908410" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5032647542476908411" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5032647542476908412" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5032647542476908413" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Should listen to ventricular pacing " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5032647542476909090" nodeInfo="ng">
+      <property name="summmary" nameId="75wo.3402431285977818823" value="Pace ventricles" />
+      <property name="name" nameId="tpck.1169194664001" value="paceVentricles" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="5032647542476909091" nodeInfo="ng" />
+      <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="5032647542476909092" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5032647542476909093" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5032647542476909094" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5032647542476909095" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Should pace ventricles" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5032647542476909137" nodeInfo="ng">
+      <property name="summmary" nameId="75wo.3402431285977818823" value="Inhibit" />
+      <property name="name" nameId="tpck.1169194664001" value="inhibit" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="5032647542476909138" nodeInfo="ng" />
+      <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="5032647542476909139" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5032647542476909140" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5032647542476909141" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5032647542476909142" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="If natural pacing sensed after VRP - do not pace" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5032647542476909196" nodeInfo="ng">
+      <property name="summmary" nameId="75wo.3402431285977818823" value="Ignore VRP sensing" />
+      <property name="name" nameId="tpck.1169194664001" value="ignoreVrpSens" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="5032647542476909197" nodeInfo="ng" />
+      <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="5032647542476909198" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5032647542476909199" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5032647542476909200" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5032647542476909201" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="During VRP time after a pace the heart is noisy, and sensing signals should be ignored" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="requirements" roleId="75wo.8745401669462963171" type="75wo.Requirement" typeId="75wo.8745401669462952101" id="5032647542476909267" nodeInfo="ng">
+      <property name="summmary" nameId="75wo.3402431285977818823" value="Pace if no natural pacing" />
+      <property name="name" nameId="tpck.1169194664001" value="pace" />
+      <node role="kind" roleId="75wo.8921256082857728256" type="75wo.FunctionalRequirementKind" typeId="75wo.8921256082857728250" id="5032647542476909268" nodeInfo="ng" />
+      <node role="doc" roleId="75wo.6657644269295007507" type="75wo.ReqDocParagraph" typeId="75wo.6657644269295006436" id="5032647542476909269" nodeInfo="ng">
+        <node role="contents" roleId="2c95.3350625596580064250" type="2c95.TextParagraph" typeId="2c95.3350625596580089586" id="5032647542476909270" nodeInfo="ng">
+          <node role="text" roleId="2c95.3350625596580089613" type="87nw.Text" typeId="87nw.2557074442922380897" id="5032647542476909271" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5032647542476909272" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="If after VRP inside LRL a natural pace has not followed, pace artificially" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="abstract" roleId="75wo.2588579461811806005" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5032647542476723515" nodeInfo="ng">
       <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5032647542476723516" nodeInfo="ng">
         <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5032647542476723517" nodeInfo="ng">
