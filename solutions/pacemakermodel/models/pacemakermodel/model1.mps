@@ -2896,12 +2896,23 @@
             <node role="varRef" roleId="q5q6.8985851583396455257" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4032488708628987882" nodeInfo="ng">
               <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4032488708628837430" resolveInfo="initialAfterA" />
             </node>
-            <node role="constraints" roleId="q5q6.8985851583396455261" type="mj1l.LessEqualsExpression" typeId="mj1l.8860443239512147451" id="4032488708629059768" nodeInfo="ng">
-              <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4032488708629059771" nodeInfo="ng">
-                <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4032488708628837430" resolveInfo="initialAfterA" />
+            <node role="constraints" roleId="q5q6.8985851583396455261" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="4032488708629132267" nodeInfo="ng">
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="4032488708629199861" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="4032488708629232914" nodeInfo="ng">
+                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4032488708629165979" nodeInfo="ng">
+                  <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4032488708628837430" resolveInfo="initialAfterA" />
+                </node>
               </node>
-              <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4032488708629095385" nodeInfo="ng">
-                <link role="var" roleId="x27k.6610873504380357355" targetNodeId="8329552506045865983" resolveInfo="AEI" />
+              <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.LessEqualsExpression" typeId="mj1l.8860443239512147451" id="4032488708629059768" nodeInfo="ng">
+                <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4032488708629059771" nodeInfo="ng">
+                  <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4032488708628837430" resolveInfo="initialAfterA" />
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="4032488708629095385" nodeInfo="ng">
+                  <link role="var" roleId="x27k.6610873504380357355" targetNodeId="8329552506045865983" resolveInfo="AEI" />
+                </node>
               </node>
             </node>
           </node>

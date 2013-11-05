@@ -51,11 +51,11 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="caretX" value="31" />
+                    <property name="caretXRelative" value="8" />
+                    <property name="caretX" value="411" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_7h2wce_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/8329552506047228866" />
+                    <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                      <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/4032488708629232914" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -1094,11 +1094,11 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="0" />
-                <property name="caretX" value="31" />
+                <property name="caretXRelative" value="8" />
+                <property name="caretX" value="411" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_7h2wce_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/8329552506047228866" />
+                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                  <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/4032488708629232914" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
