@@ -2974,6 +2974,13 @@
             <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8329552506047220310" resolveInfo="ddd" />
           </node>
         </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.NonDeterministicInit" typeId="q5q6.7759126187580038177" id="7759126187585538377" nodeInfo="ng">
+          <node role="statemachine" roleId="q5q6.1786180596061208522" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="7759126187585695574" nodeInfo="ng">
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="8329552506047220310" resolveInfo="ddd" />
+          </node>
+          <node role="subspace" roleId="q5q6.7759126187582434043" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="7759126187586585502" nodeInfo="ng" />
+          <node role="body" roleId="q5q6.7759126187582498129" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="7759126187586852160" nodeInfo="ng" />
+        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7616626738807514934" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4032488708628790298" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ForStatement" typeId="c4fa.7254843406768596598" id="8329552506047234397" nodeInfo="ng">
