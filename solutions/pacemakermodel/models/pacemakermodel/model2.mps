@@ -2818,16 +2818,58 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="q5q6.StateMachineEnvironmentDescription" typeId="q5q6.6937663792687144340" id="6937663792689776020" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Heart" />
       <link role="stateMachineDef" roleId="q5q6.6937663792687144560" targetNodeId="8329552506045886914" resolveInfo="DDD_Machine" />
-      <node role="constraints" roleId="q5q6.6937663792687146539" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="6937663792690404768" nodeInfo="ng">
-        <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="6937663792690404667" nodeInfo="ng">
-          <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6937663792690404443" nodeInfo="ng">
-            <node role="right" roleId="mj1l.8860443239512128065" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="6937663792690404476" nodeInfo="ng">
-              <link role="state" roleId="clqz.2558982571829202228" targetNodeId="8329552506045909993" resolveInfo="WaitAfterArtrialEvent" />
-              <node role="expr" roleId="clqz.2558982571829189198" type="q5q6.StateMachineReference" typeId="q5q6.697164800619789283" id="6937663792690404528" nodeInfo="ng" />
+      <node role="constraints" roleId="q5q6.6937663792687146539" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6937663792692100552" nodeInfo="ng">
+        <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="6937663792690404768" nodeInfo="ng">
+          <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="6937663792690404667" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6937663792690404443" nodeInfo="ng">
+              <node role="right" roleId="mj1l.8860443239512128065" type="clqz.IsInStateExpression" typeId="clqz.2558982571829189197" id="6937663792690404476" nodeInfo="ng">
+                <link role="state" roleId="clqz.2558982571829202228" targetNodeId="8329552506045909993" resolveInfo="WaitAfterArtrialEvent" />
+                <node role="expr" roleId="clqz.2558982571829189198" type="q5q6.StateMachineReference" typeId="q5q6.697164800619789283" id="6937663792690404528" nodeInfo="ng" />
+              </node>
+              <node role="left" roleId="mj1l.8860443239512128064" type="q5q6.inEventTriggeredExpression" typeId="q5q6.6937663792687760849" id="6937663792690404382" nodeInfo="ng">
+                <link role="inEvent" roleId="q5q6.6937663792687760967" targetNodeId="8329552506045895578" resolveInfo="AS" />
+                <node role="stateMachine" roleId="q5q6.6937663792687760971" type="q5q6.StateMachineReference" typeId="q5q6.697164800619789283" id="6937663792690404392" nodeInfo="ng" />
+              </node>
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="q5q6.inEventTriggeredExpression" typeId="q5q6.6937663792687760849" id="6937663792690404382" nodeInfo="ng">
-              <link role="inEvent" roleId="q5q6.6937663792687760967" targetNodeId="8329552506045895578" resolveInfo="AS" />
-              <node role="stateMachine" roleId="q5q6.6937663792687760971" type="q5q6.StateMachineReference" typeId="q5q6.697164800619789283" id="6937663792690404392" nodeInfo="ng" />
+          </node>
+        </node>
+        <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6937663792692894417" nodeInfo="ng">
+          <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="6937663792693406630" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.LessEqualsExpression" typeId="mj1l.8860443239512147451" id="6937663792693200055" nodeInfo="ng">
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6937663792693304142" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="q5q6.TimesEventOccurred" typeId="q5q6.6937663792687147552" id="6937663792693329585" nodeInfo="ng">
+                  <link role="outEvent" roleId="q5q6.6937663792687147553" targetNodeId="8329552506045895625" resolveInfo="VP" />
+                  <node role="stateMachine" roleId="q5q6.6937663792687147665" type="q5q6.StateMachineReference" typeId="q5q6.697164800619789283" id="6937663792693355410" nodeInfo="ng" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="q5q6.TimesEventOccurred" typeId="q5q6.6937663792687147552" id="6937663792693226469" nodeInfo="ng">
+                  <link role="outEvent" roleId="q5q6.6937663792687147553" targetNodeId="8329552506045895655" resolveInfo="VPN" />
+                  <node role="stateMachine" roleId="q5q6.6937663792687147665" type="q5q6.StateMachineReference" typeId="q5q6.697164800619789283" id="6937663792693251670" nodeInfo="ng" />
+                </node>
+              </node>
+              <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6937663792693097953" nodeInfo="ng">
+                <node role="left" roleId="mj1l.8860443239512128064" type="q5q6.TimesEventOccurred" typeId="q5q6.6937663792687147552" id="6937663792692919928" nodeInfo="ng">
+                  <link role="outEvent" roleId="q5q6.6937663792687147553" targetNodeId="8329552506045895613" resolveInfo="AP" />
+                  <node role="stateMachine" roleId="q5q6.6937663792687147665" type="q5q6.StateMachineReference" typeId="q5q6.697164800619789283" id="6937663792692946001" nodeInfo="ng" />
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="q5q6.TimesEventOccurred" typeId="q5q6.6937663792687147552" id="6937663792693123403" nodeInfo="ng">
+                  <link role="outEvent" roleId="q5q6.6937663792687147553" targetNodeId="8329552506045895639" resolveInfo="APN" />
+                  <node role="stateMachine" roleId="q5q6.6937663792687147665" type="q5q6.StateMachineReference" typeId="q5q6.697164800619789283" id="6937663792693149019" nodeInfo="ng" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="6937663792692894006" nodeInfo="ng">
+            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="6937663792692893779" nodeInfo="ng">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="6937663792692892856" nodeInfo="ng">
+                <node role="left" roleId="mj1l.8860443239512128064" type="q5q6.CurrentTime" typeId="q5q6.8985851583396646862" id="6937663792692892746" nodeInfo="ng" />
+                <node role="right" roleId="mj1l.8860443239512128065" type="q5q6.LastTimeEventOccurred" typeId="q5q6.6937663792687151477" id="6937663792692893188" nodeInfo="ng">
+                  <link role="outEvent" roleId="q5q6.6937663792687151479" targetNodeId="8329552506045895655" resolveInfo="VPN" />
+                  <node role="stateMachine" roleId="q5q6.6937663792687151478" type="q5q6.StateMachineReference" typeId="q5q6.697164800619789283" id="6937663792692893368" nodeInfo="ng" />
+                </node>
+              </node>
+            </node>
+            <node role="right" roleId="mj1l.8860443239512128065" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="6937663792692894219" nodeInfo="ng">
+              <link role="var" roleId="x27k.6610873504380357355" targetNodeId="8329552506045856083" resolveInfo="URI" />
             </node>
           </node>
         </node>
