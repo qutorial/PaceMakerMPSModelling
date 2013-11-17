@@ -13,9 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4cc2a49-26ee-4710-bb49-c356f88f8275" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/pacemakermodel/models/pacemakermodel/model1.mps" afterPath="$PROJECT_DIR$/solutions/pacemakermodel/models/pacemakermodel/model1.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/pacemakermodel/models/pacemakermodel/model2.mps" afterPath="$PROJECT_DIR$/solutions/pacemakermodel/models/pacemakermodel/model2.mps" />
     </list>
     <ignored path="org.fortiss.pacemakermodel.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -91,19 +89,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PaceMakerModel3_VVI" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PaceMakerModel3_VVI" pinned="false" current="false" current-in-tab="false">
         <entry file="mps://node://pacemakermodel/pacemakermodel.model1/PaceMakerModel3_VVI">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
+              <memento viewPositionX="0" viewPositionY="976">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="56" />
-                    <property name="caretX" value="454" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="171" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_luh5hj_a1d0a" cellNumber="0" isInList="false">
-                      <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/5032647542476402483" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/9200366914192254072" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -119,7 +117,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnalysisConfiguration" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AnalysisConfiguration" pinned="false" current="true" current-in-tab="true">
         <entry file="mps://node://pacemakermodel/pacemakermodel.model1/AnalysisConfiguration">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -487,7 +485,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-3" width="1924" height="1172" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Search" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -521,7 +519,7 @@
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="23" side_tool="false" content_ui="tabs" />
       <window_info id="mbeddr TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="24" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Verification (CBMC)" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25186765" sideWeight="0.8039962" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Verification (CBMC)" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25186765" sideWeight="0.8039962" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19600381" sideWeight="0.41925132" order="25" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="26" side_tool="false" content_ui="tabs" />
@@ -894,18 +892,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://pacemakermodel/pacemakermodel.model1/AnalysisConfiguration">
+    <entry file="mps://node://pacemakermodel/pacemakermodel.model1/PaceMakerModel3_VVI">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
+          <memento viewPositionX="0" viewPositionY="976">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="96" />
-                <property name="caretX" value="209" />
+                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="171" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ex8ph1_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/350900261919904231" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/9200366914192254072" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -920,18 +918,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://pacemakermodel/pacemakermodel.model1/PaceMakerModel3_VVI">
+    <entry file="mps://node://pacemakermodel/pacemakermodel.model1/AnalysisConfiguration">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="56" />
-                <property name="caretX" value="454" />
+                <property name="caretXRelative" value="96" />
+                <property name="caretX" value="209" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_luh5hj_a1d0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/5032647542476402483" />
+                <cellInfo cellId="Constant_ex8ph1_c0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/350900261919904231" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
