@@ -2768,7 +2768,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1384337971432_2" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="q5q6.StateMachineStateSubSpace" typeId="q5q6.697164800619673343" id="7616626738812763051" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Initial" />
+      <property name="name" nameId="tpck.1169194664001" value="Invariant" />
       <link role="stateMachine" roleId="q5q6.697164800619745501" targetNodeId="8329552506045886914" resolveInfo="DDD_Machine" />
       <node role="constraints" roleId="q5q6.697164800619697541" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="7616626738812813141" nodeInfo="ng">
         <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="7616626738812813142" nodeInfo="ng">
@@ -2944,7 +2944,7 @@
             </node>
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6937663792681720403" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="1982034285736163107" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="6937663792680177409" nodeInfo="ng">
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="6937663792680200802" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="6937663792680293146" nodeInfo="ng">
@@ -3083,7 +3083,7 @@
         <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.CyclicStateMachineVerification" typeId="q5q6.6937663792672023620" id="6937663792691340309" nodeInfo="ng">
           <link role="stateMachineDef" roleId="q5q6.6937663792672091419" targetNodeId="8329552506045886914" resolveInfo="DDD_Machine" />
           <link role="tickEvent" roleId="q5q6.6937663792673385245" targetNodeId="8329552506045895603" resolveInfo="tick" />
-          <link role="initialSubspace" roleId="q5q6.6937663792672135359" targetNodeId="7616626738812763051" resolveInfo="Initial" />
+          <link role="initialSubspace" roleId="q5q6.6937663792672135359" targetNodeId="7616626738812763051" resolveInfo="Invariant" />
           <link role="environmentDesc" roleId="q5q6.6937663792690410256" targetNodeId="6937663792689776020" resolveInfo="Heart" />
           <node role="assertions" roleId="q5q6.6937663792673553415" type="q5q6.AfterPThenQ" typeId="q5q6.7573444803550855448" id="4896324504706013485" nodeInfo="ng">
             <property name="disabled" nameId="q5q6.8330520303445148918" value="false" />
