@@ -3649,25 +3649,13 @@
               <node role="left" roleId="mj1l.8860443239512128064" type="q5q6.CurrentTime" typeId="q5q6.8985851583396646862" id="448588129143475101" nodeInfo="ng" />
               <node role="right" roleId="mj1l.8860443239512128065" type="q5q6.CycleLengthExpression" typeId="q5q6.6937663792684154694" id="448588129143488332" nodeInfo="ng" />
             </node>
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="448588129143467582" nodeInfo="ng">
-              <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="448588129143467583" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="448588129143467584" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="448588129143467585" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Paces at least with LRL rate" />
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
-          <node role="assertions" roleId="q5q6.6937663792673553415" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="448588129143467586" nodeInfo="ng" />
           <node role="assertions" roleId="q5q6.6937663792673553415" type="q5q6.AfterPThenQ" typeId="q5q6.7573444803550855448" id="448588129143467587" nodeInfo="ng">
             <property name="disabled" nameId="q5q6.8330520303445148918" value="false" />
             <node role="p" roleId="q5q6.7392194941658581813" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="448588129143467588" nodeInfo="ng" />
             <node role="q" roleId="q5q6.7392194941658581814" type="mj1l.LessEqualsExpression" typeId="mj1l.8860443239512147451" id="448588129143467589" nodeInfo="ng">
               <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="448588129148771214" nodeInfo="ng">
-                <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalVarRef" typeId="x27k.6610873504380357354" id="448588129148771220" nodeInfo="ng">
-                  <link role="var" roleId="x27k.6610873504380357355" targetNodeId="4362365420520470395" resolveInfo="TIME" />
-                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="q5q6.CurrentTime" typeId="q5q6.8985851583396646862" id="1931806572617939472" nodeInfo="ng" />
                 <node role="right" roleId="mj1l.8860443239512128065" type="q5q6.TimesEventsOccurred" typeId="q5q6.448588129143505717" id="448588129148771216" nodeInfo="ng">
                   <node role="stateMachine" roleId="q5q6.448588129143505718" type="q5q6.StateMachineReference" typeId="q5q6.697164800619789283" id="448588129148771217" nodeInfo="ng" />
                   <node role="eventRef" roleId="q5q6.448588129143505719" type="q5q6.EventReference" typeId="q5q6.6937663792694549381" id="448588129148771218" nodeInfo="ng">
@@ -3682,17 +3670,7 @@
                 <link role="var" roleId="x27k.6610873504380357355" targetNodeId="5032647542476689563" resolveInfo="LRL" />
               </node>
             </node>
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="448588129143467594" nodeInfo="ng">
-              <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="448588129143467595" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="448588129143467596" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="448588129143467597" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Paces often enough" />
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
-          <node role="assertions" roleId="q5q6.6937663792673553415" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="448588129143467598" nodeInfo="ng" />
           <node role="assertions" roleId="q5q6.6937663792673553415" type="q5q6.AfterPThenQ" typeId="q5q6.7573444803550855448" id="448588129143467599" nodeInfo="ng">
             <property name="disabled" nameId="q5q6.8330520303445148918" value="false" />
             <node role="p" roleId="q5q6.7392194941658581813" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="448588129143467600" nodeInfo="ng">
@@ -3727,15 +3705,6 @@
                 <node role="right" roleId="mj1l.8860443239512128065" type="q5q6.LastTimeEventOccurred" typeId="q5q6.6937663792687151477" id="448588129149027344" nodeInfo="ng">
                   <link role="outEvent" roleId="q5q6.6937663792687151479" targetNodeId="5032647542476481908" resolveInfo="pace" />
                   <node role="stateMachine" roleId="q5q6.6937663792687151478" type="q5q6.StateMachineReference" typeId="q5q6.697164800619789283" id="448588129149041265" nodeInfo="ng" />
-                </node>
-              </node>
-            </node>
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="448588129143467608" nodeInfo="ng">
-              <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="448588129143467609" nodeInfo="ng">
-                <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="448588129143467610" nodeInfo="ng">
-                  <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="448588129143467611" nodeInfo="ng">
-                    <property name="escapedValue" nameId="87nw.2557074442922438158" value="Does not pace artificially too often" />
-                  </node>
                 </node>
               </node>
             </node>
