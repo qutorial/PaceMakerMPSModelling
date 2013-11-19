@@ -1578,20 +1578,12 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7745462878239913230" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="2415368572300243851" nodeInfo="ng">
-          <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="2415368572300246860" nodeInfo="ng">
-            <node role="left" roleId="mj1l.8860443239512128064" type="q5q6.CurrentTime" typeId="q5q6.8985851583396646862" id="2415368572300243849" nodeInfo="ng" />
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2415368572300246930" nodeInfo="ng">
-              <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.2212975673976043696" value="0" />
-            </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.TimeEnvironment" typeId="q5q6.7745462878236857443" id="2415368572302594773" nodeInfo="ng">
+          <link role="tickEvent" roleId="q5q6.7745462878236917847" targetNodeId="5032647542476482406" resolveInfo="tick" />
+          <node role="stateMachine" roleId="q5q6.7745462878236917841" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2415368572302594799" nodeInfo="ng">
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5032647542477034182" resolveInfo="vvi" />
           </node>
-        </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2415368572300237856" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2415368572300261822" nodeInfo="ng" />
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ForStatement" typeId="c4fa.7254843406768596598" id="2415368572300284910" nodeInfo="ng">
-          <node role="body" roleId="c4fa.7254843406768606771" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2415368572300284912" nodeInfo="ng">
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2415368572301324632" nodeInfo="ng" />
+          <node role="body" roleId="q5q6.7745462878237204726" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="2415368572302594777" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="2406609043750019529" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="sensed" />
               <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="2406609043750019527" nodeInfo="ng">
@@ -1770,16 +1762,6 @@
                 <node role="left" roleId="mj1l.8860443239512128064" type="q5q6.CurrentTime" typeId="q5q6.8985851583396646862" id="2406609043750202826" nodeInfo="ng" />
               </node>
             </node>
-            <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="2415368572300288187" nodeInfo="ng">
-              <link role="event" roleId="clqz.1786180596061231919" targetNodeId="5032647542476482406" resolveInfo="tick" />
-              <node role="statemachine" roleId="clqz.7851711690674279260" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="2415368572300288194" nodeInfo="ng">
-                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5032647542477034182" resolveInfo="vvi" />
-              </node>
-            </node>
-          </node>
-          <node role="condition" roleId="c4fa.7254843406768606787" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="2415368572300288139" nodeInfo="ng" />
-          <node role="incr" roleId="c4fa.7254843406768606790" type="mj1l.PreIncrementExpression" typeId="mj1l.4375898003726285487" id="2415368572300288149" nodeInfo="ng">
-            <node role="expression" roleId="mj1l.7254843406768839760" type="q5q6.CurrentTime" typeId="q5q6.8985851583396646862" id="2415368572300288169" nodeInfo="ng" />
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="2406609043750009593" nodeInfo="ng" />
