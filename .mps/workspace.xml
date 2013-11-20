@@ -14,7 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f4cc2a49-26ee-4710-bb49-c356f88f8275" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/pacemakermodel/models/pacemakermodel/model1.mps" afterPath="$PROJECT_DIR$/solutions/pacemakermodel/models/pacemakermodel/model1.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/pacemakermodel/models/pacemakermodel/model2.mps" afterPath="$PROJECT_DIR$/solutions/pacemakermodel/models/pacemakermodel/model2.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
     </list>
     <ignored path="org.fortiss.pacemakermodel.iws" />
@@ -45,38 +44,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CyclicStateMachineVerification" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://node://com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.structure/CyclicStateMachineVerification">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <folded />
-                <enabledHints />
-              </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <folded />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:d1d2f189-b1e7-4902-9fc0-3cfa1dc70519(com.mbeddr.analyses.cbmc.editor)/6937663792672037058" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PacemakerModel3_VVI" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://node://pacemakermodel/pacemakermodel.model2/PacemakerModel3_VVI">
+      <file leaf-file-name="AnalysisConfiguration" pinned="false" current="true" current-in-tab="true">
+        <entry file="mps://node://pacemakermodel/pacemakermodel.model1/AnalysisConfiguration">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="3631">
+              <memento viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="caretX" value="45" />
+                    <property name="caretXRelative" value="56" />
+                    <property name="caretX" value="169" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_7h2wce_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:291bbd94-a1c1-4d19-980d-de5c78d4db5a(pacemakermodel.model2)/7912214418679526798" />
+                    <cellInfo cellId="Constant_ex8ph1_c0a" cellNumber="0" isInList="false">
+                      <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/350900261919904231" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -96,17 +76,15 @@
         <entry file="mps://node://pacemakermodel/pacemakermodel.model1/PacemakerModel3_VVI">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="2887">
+              <memento viewPositionX="0" viewPositionY="2304">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="selectionEnd" value="2" />
-                    <property name="hasNonTrivialSelection" value="true" />
-                    <property name="caretXRelative" value="30" />
-                    <property name="selectionStart" value="0" />
-                    <property name="caretX" value="380" />
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="8" />
+                    <property name="caretX" value="171" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                      <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/3666927460935432231" />
+                      <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/2406609043750202820" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -122,171 +100,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PacemakerModel1" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://node://pacemakermodel/pacemakermodel.model1/PacemakerModel1">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <folded />
-                <enabledHints />
-              </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <folded />
-                <enabledHints />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnalysisConfiguration" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://node://pacemakermodel/pacemakermodel.model1/AnalysisConfiguration">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="420">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="120" />
-                    <property name="caretX" value="352" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/350900261919904231" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <folded />
-                <enabledHints />
-              </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <folded />
-                <enabledHints />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StateMachineStateSubset" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://node://com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.structure/StateMachineStateSubset">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="500">
-                <selectionStack />
-                <folded />
-                <enabledHints />
-              </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <folded />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:e4e4b0dd-d94e-44bb-9f8f-d7d45fe6e705(com.mbeddr.analyses.cbmc.generator.template.main@generator)/2161187783549497039" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PacemakerModel2_Requirements" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://node://pacemakermodel/pacemakermodel.model1/PacemakerModel2_Requirements">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <folded />
-                <enabledHints />
-              </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <folded />
-                <enabledHints />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NondetVarAssignment" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://node://com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.structure/NondetVarAssignment">
+      <file leaf-file-name="AssertionsCBMCAnalysis" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://node://com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.structure/AssertionsCBMCAnalysis">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
               <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <folded />
-                <enabledHints />
-              </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <folded />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:82fb1948-3fec-4579-9ed4-393345286b72(com.mbeddr.analyses.cbmc.intentions)/2613206384568936505" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cyclic_PacemakerModel4_DDD" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://node://pacemakermodel/pacemakermodel.model2/Cyclic_PacemakerModel4_DDD">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="5280">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="135" />
-                    <property name="caretX" value="262" />
+                    <property name="caretXRelative" value="168" />
+                    <property name="caretX" value="515" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:291bbd94-a1c1-4d19-980d-de5c78d4db5a(pacemakermodel.model2)/1982034285736276463" />
+                      <node node_reference="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)/6472990431940227507" />
                     </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.NodeRangeSelection">
-                    <property name="lastNodeId" value="1982034285736276463" />
-                    <property name="modelId" value="r:291bbd94-a1c1-4d19-980d-de5c78d4db5a(pacemakermodel.model2)" />
-                    <property name="parentNodeId" value="8329552506047192808" />
-                    <property name="firstNodeId" value="1982034285736276463" />
-                    <property name="role" value="statements" />
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.NodeRangeSelection">
-                    <property name="lastNodeId" value="1982034285736277165" />
-                    <property name="modelId" value="r:291bbd94-a1c1-4d19-980d-de5c78d4db5a(pacemakermodel.model2)" />
-                    <property name="parentNodeId" value="8329552506047192808" />
-                    <property name="firstNodeId" value="1982034285736276463" />
-                    <property name="role" value="statements" />
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.NodeRangeSelection">
-                    <property name="lastNodeId" value="1982034285736277652" />
-                    <property name="modelId" value="r:291bbd94-a1c1-4d19-980d-de5c78d4db5a(pacemakermodel.model2)" />
-                    <property name="parentNodeId" value="8329552506047192808" />
-                    <property name="firstNodeId" value="1982034285736276463" />
-                    <property name="role" value="statements" />
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.NodeRangeSelection">
-                    <property name="lastNodeId" value="1982034285736278383" />
-                    <property name="modelId" value="r:291bbd94-a1c1-4d19-980d-de5c78d4db5a(pacemakermodel.model2)" />
-                    <property name="parentNodeId" value="8329552506047192808" />
-                    <property name="firstNodeId" value="1982034285736276463" />
-                    <property name="role" value="statements" />
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.NodeRangeSelection">
-                    <property name="lastNodeId" value="1982034285736278629" />
-                    <property name="modelId" value="r:291bbd94-a1c1-4d19-980d-de5c78d4db5a(pacemakermodel.model2)" />
-                    <property name="parentNodeId" value="8329552506047192808" />
-                    <property name="firstNodeId" value="1982034285736276463" />
-                    <property name="role" value="statements" />
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.NodeRangeSelection">
-                    <property name="lastNodeId" value="6937663792681720403" />
-                    <property name="modelId" value="r:291bbd94-a1c1-4d19-980d-de5c78d4db5a(pacemakermodel.model2)" />
-                    <property name="parentNodeId" value="8329552506047192808" />
-                    <property name="firstNodeId" value="1982034285736276463" />
-                    <property name="role" value="statements" />
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.NodeRangeSelection">
-                    <property name="lastNodeId" value="6937663792680177409" />
-                    <property name="modelId" value="r:291bbd94-a1c1-4d19-980d-de5c78d4db5a(pacemakermodel.model2)" />
-                    <property name="parentNodeId" value="8329552506047192808" />
-                    <property name="firstNodeId" value="1982034285736276463" />
-                    <property name="role" value="statements" />
                   </stackElement>
                 </selectionStack>
                 <folded />
@@ -297,23 +124,82 @@
                 <folded />
                 <enabledHints />
               </inspectorMemento>
+              <node node_ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)/6472990431940227507" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PacemakerModel4_DDD" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CProverBasedMbeddrAnalysis" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://node://com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.structure/CProverBasedMbeddrAnalysis">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="56" />
+                    <property name="caretX" value="507" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)/8780453576634979155" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <folded />
+                <enabledHints />
+              </memento>
+              <inspectorMemento viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <folded />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)/8780453576634979155" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CProverBasedAnalysis" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://node://com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.structure/CProverBasedAnalysis">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="147" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="TransactionalProperty_ueqr71_d0a" cellNumber="0" isInList="false">
+                      <node node_reference="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)/6472990431939799907" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <folded />
+                <enabledHints />
+              </memento>
+              <inspectorMemento viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <folded />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)/6472990431939799907" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PacemakerModel4_DDD" pinned="false" current="false" current-in-tab="false">
         <entry file="mps://node://pacemakermodel/pacemakermodel.model1/PacemakerModel4_DDD">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="5336">
+              <memento viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="15" />
-                    <property name="caretX" value="60" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="47" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_5hmjhz_h0" cellNumber="0" isInList="false">
-                      <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/7616626738812763051" />
+                    <cellInfo cellId="Constant_7h2wce_a" cellNumber="0" isInList="false">
+                      <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/6937663792673025128" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -854,6 +740,48 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="mbeddr">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="analyses">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com.mbeddr.analyses.cbmc">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com.mbeddr.analyses.cbmc.structure">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="configuration">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="cbmc">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Modules Pool">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Languages">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Empty">
@@ -1026,7 +954,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921028" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25673535" sideWeight="0.67754316" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21016043" sideWeight="0.7245681" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24812834" sideWeight="0.67658347" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921028" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921028" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
@@ -1039,8 +967,8 @@
       <window_info id="mbeddr TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="23" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Verification (CBMC)" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3957219" sideWeight="0.67658347" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3224568" sideWeight="0.41222984" order="24" side_tool="false" content_ui="tabs" />
+      <window_info id="Verification (CBMC)" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30320856" sideWeight="0.7245681" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27543187" sideWeight="0.41222984" order="24" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="25" side_tool="false" content_ui="tabs" />
       <window_info id="ACCENT Test Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1122,55 +1050,6 @@
     <MESSAGE value="Model2 : VVI modified to ontain no threshold&#10;" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://com.mbeddr.ext.components.statemachine/com.mbeddr.ext.components.statemachine.structure/ProvidedOperationBinding">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="-7">
-            <selectionStack />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:9eccd3a7-30d5-445b-9861-4a612ecc56b6(com.mbeddr.ext.components.statemachine.typesystem)/4514118643329597909" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://com.mbeddr.analyses.cbmc.rt/com.mbeddr.analyses.cbmc.rt.counterexample_lifted/CBMCLiftedResultBuilder">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://com.mbeddr.analyses.cbmc#2161187783549497010/com.mbeddr.analyses.cbmc.generator.template.main@generator/main">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.structure/TimeEnvironment">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
@@ -1265,9 +1144,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.structure/NondetVarAssignment">
+    <entry file="mps://node://pacemakermodel/pacemakermodel.model1/PacemakerModel2_Requirements">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <folded />
@@ -1278,7 +1157,39 @@
             <folded />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:82fb1948-3fec-4579-9ed4-393345286b72(com.mbeddr.analyses.cbmc.intentions)/2613206384568936505" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.structure/StateMachineStateSubset">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="500">
+            <selectionStack />
+            <folded />
+            <enabledHints />
+          </memento>
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <folded />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:e4e4b0dd-d94e-44bb-9f8f-d7d45fe6e705(com.mbeddr.analyses.cbmc.generator.template.main@generator)/2161187783549497039" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://pacemakermodel/pacemakermodel.model1/PacemakerModel1">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <folded />
+            <enabledHints />
+          </memento>
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <folded />
+            <enabledHints />
+          </inspectorMemento>
         </state>
       </provider>
     </entry>
@@ -1357,27 +1268,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://pacemakermodel/pacemakermodel.model1/PacemakerModel2_Requirements">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.structure/StateMachineStateSubset">
+    <entry file="mps://node://com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.structure/NondetVarAssignment">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="500">
-            <selectionStack />
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="157" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:82fb1948-3fec-4579-9ed4-393345286b72(com.mbeddr.analyses.cbmc.intentions)/2613206384568936505" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
             <folded />
             <enabledHints />
           </memento>
@@ -1386,24 +1291,103 @@
             <folded />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:e4e4b0dd-d94e-44bb-9f8f-d7d45fe6e705(com.mbeddr.analyses.cbmc.generator.template.main@generator)/2161187783549497039" />
+          <node node_ref="r:82fb1948-3fec-4579-9ed4-393345286b72(com.mbeddr.analyses.cbmc.intentions)/2613206384568936505" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://pacemakermodel/pacemakermodel.model1/PacemakerModel3_VVI">
+    <entry file="mps://node://com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.structure/AssertionsCBMCAnalysis">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="2887">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="selectionEnd" value="2" />
-                <property name="hasNonTrivialSelection" value="true" />
-                <property name="caretXRelative" value="30" />
-                <property name="selectionStart" value="0" />
-                <property name="caretX" value="380" />
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="168" />
+                <property name="caretX" value="515" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                  <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/3666927460935432231" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)/6472990431940227507" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <folded />
+            <enabledHints />
+          </memento>
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <folded />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)/6472990431940227507" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.structure/CProverBasedMbeddrAnalysis">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="56" />
+                <property name="caretX" value="507" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)/8780453576634979155" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <folded />
+            <enabledHints />
+          </memento>
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <folded />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)/8780453576634979155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://com.mbeddr.analyses.cbmc/com.mbeddr.analyses.cbmc.structure/CProverBasedAnalysis">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="147" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="TransactionalProperty_ueqr71_d0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)/6472990431939799907" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <folded />
+            <enabledHints />
+          </memento>
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <folded />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)/6472990431939799907" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://pacemakermodel/pacemakermodel.model1/PacemakerModel4_DDD">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="5696">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="47" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_7h2wce_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/6937663792673025128" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1418,11 +1402,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://pacemakermodel/pacemakermodel.model1/PacemakerModel1">
+    <entry file="mps://node://pacemakermodel/pacemakermodel.model1/PacemakerModel3_VVI">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
+          <memento viewPositionX="0" viewPositionY="2304">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="8" />
+                <property name="caretX" value="171" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                  <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/2406609043750202820" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
             <folded />
             <enabledHints />
           </memento>
@@ -1437,41 +1431,15 @@
     <entry file="mps://node://pacemakermodel/pacemakermodel.model1/AnalysisConfiguration">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="420">
+          <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="120" />
-                <property name="caretX" value="352" />
+                <property name="caretXRelative" value="56" />
+                <property name="caretX" value="169" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                <cellInfo cellId="Constant_ex8ph1_c0a" cellNumber="0" isInList="false">
                   <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/350900261919904231" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://pacemakermodel/pacemakermodel.model1/PacemakerModel4_DDD">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="5336">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="15" />
-                <property name="caretX" value="60" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_5hmjhz_h0" cellNumber="0" isInList="false">
-                  <node node_reference="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)/7616626738812763051" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
