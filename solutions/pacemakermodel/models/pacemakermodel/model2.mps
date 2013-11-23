@@ -21,10 +21,10 @@
   <import index="6ega" modelUID="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)" version="-1" />
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="5" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="16" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="19" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="18" implicit="yes" />
   <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="27" implicit="yes" />
-  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="5" implicit="yes" />
+  <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="7" implicit="yes" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="15" implicit="yes" />
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="15" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -1662,7 +1662,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1381414033496_23" />
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="8366617727056675894" nodeInfo="ng">
-      <property name="showTraces" nameId="26ao.3348865852193251354" value="true" />
+      <property name="showTraces" value="true" />
       <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="8366617727056675895" nodeInfo="ng">
         <link role="provider" roleId="26ao.439567521322959423" targetNodeId="6ega.4362365420520357874" resolveInfo="PacemakerModel4_DDD_Requirements" />
       </node>
@@ -2032,7 +2032,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1381309126600_2" />
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="7745462878239974611" nodeInfo="ng">
-      <property name="showTraces" nameId="26ao.3348865852193251354" value="true" />
+      <property name="showTraces" value="true" />
       <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="7745462878239974612" nodeInfo="ng">
         <link role="provider" roleId="26ao.439567521322959423" targetNodeId="6ega.5032647542476723514" resolveInfo="PacemakerModel3_VVI_Requirements" />
       </node>
@@ -2961,7 +2961,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1381309126600_2" />
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="7912214418678744872" nodeInfo="ng">
-      <property name="showTraces" nameId="26ao.3348865852193251354" value="true" />
+      <property name="showTraces" value="true" />
       <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="7912214418678744873" nodeInfo="ng">
         <link role="provider" roleId="26ao.439567521322959423" targetNodeId="6ega.5032647542476723514" resolveInfo="PacemakerModel3_VVI_Requirements" />
       </node>
@@ -4558,7 +4558,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1381414033496_23" />
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="8329552506045859737" nodeInfo="ng">
-      <property name="showTraces" nameId="26ao.3348865852193251354" value="true" />
+      <property name="showTraces" value="true" />
       <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="8329552506045860319" nodeInfo="ng">
         <link role="provider" roleId="26ao.439567521322959423" targetNodeId="8366617727056675277" resolveInfo="PacemakerModel4_DDD_Requirements" />
       </node>
@@ -5425,7 +5425,7 @@
             <link role="machine" roleId="clqz.7851711690674263346" targetNodeId="3299464369628619126" resolveInfo="VVI" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3666927460935270216" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3299464369630999041" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="5185763622117523473" nodeInfo="ng">
           <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5185763622117523475" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5185763622117523476" nodeInfo="ng">
@@ -5735,11 +5735,12 @@
             </node>
           </node>
         </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="3299464369630998595" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="3299464369629120224" nodeInfo="ng">
           <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3299464369629120226" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3299464369629120227" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3299464369629120228" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Step 5: initialize sm non deterministically" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Step 5: initialize nondeterministically" />
               </node>
             </node>
           </node>
@@ -5887,7 +5888,6 @@
             <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="3666927460935452928" resolveInfo="LRI" />
           </node>
         </node>
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5032647542477536577" nodeInfo="ng" />
       </node>
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5032647542477522750" nodeInfo="ng">
@@ -5903,6 +5903,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1381309126600_2" />
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="5032647542476911387" nodeInfo="ng">
+      <property name="showTraces" value="f" />
       <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="5032647542476912068" nodeInfo="ng">
         <link role="provider" roleId="26ao.439567521322959423" targetNodeId="6ega.5032647542476723514" resolveInfo="PacemakerModel3_VVI_Requirements" />
       </node>
