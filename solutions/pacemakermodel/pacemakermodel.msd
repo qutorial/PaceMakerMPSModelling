@@ -8,6 +8,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">42270baf-e92c-4c32-b263-d617b3fce239(com.mbeddr.analyses.cbmc)</dependency>
+    <dependency reexport="false">d4fa79fb-29ec-4908-bbeb-dbe5fc8500cd(history)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>5d09074f-babf-4f2b-b78b-e9929af0f3be(com.mbeddr.analyses.base)</usedLanguage>
@@ -20,8 +21,10 @@
     <usedLanguage>b9f5080f-7f6a-4d86-b994-77d4c982153a(com.mbeddr.cc.requirements.scenario2doc)</usedLanguage>
     <usedLanguage>d6714220-402d-48cb-a4a2-88223c6257f6(com.mbeddr.cc.requirements.scenarios)</usedLanguage>
     <usedLanguage>e530d4cb-efad-4822-92f8-1d114f03f836(com.mbeddr.cc.requirements.wp)</usedLanguage>
+    <usedLanguage>53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)</usedLanguage>
     <usedLanguage>2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)</usedLanguage>
     <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
+    <usedLanguage>d4fa79fb-29ec-4908-bbeb-dbe5fc8500cd(history)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>2bdeee47-6092-4bbf-b31d-6be5dbbba49d(com.mbeddr.analyses.statemachine)</usedDevKit>
