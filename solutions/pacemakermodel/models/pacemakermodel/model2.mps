@@ -276,7 +276,7 @@
     <property name="name" nameId="tpck.1169194664001" value="DocumentConfiguration" />
     <node role="defaultTempPath" roleId="2c95.5785245534401182264" type="2c95.PathDefinition" typeId="2c95.6386504476136472795" id="8366617727056674960" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="temp" />
-      <property name="editTimePath" nameId="2c95.6386504476136472797" value="/tmp/docs" />
+      <property name="editTimePath" value="/tmp/docs" />
     </node>
   </root>
   <root type="75wo.RequirementsModule" typeId="75wo.8745401669462963169" id="8366617727056675277" nodeInfo="ng">
@@ -1476,6 +1476,11 @@
                 </node>
               </node>
             </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5056520103092166082" nodeInfo="ng" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5056520103092166513" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="q5q6.CurrentTime" typeId="q5q6.8985851583396646862" id="5056520103092166511" nodeInfo="ng" />
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5056520103092166224" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.AfterPThenQ" typeId="q5q6.7573444803550855448" id="8366617727056675798" nodeInfo="ng">
               <property name="disabled" nameId="q5q6.8330520303445148918" value="false" />
               <node role="p" roleId="q5q6.7392194941658581813" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="8366617727056675799" nodeInfo="ng">
@@ -1661,14 +1666,15 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8366617727056675893" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1381414033496_23" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="8366617727056675894" nodeInfo="ng">
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.requirements.structure.ReqModuleRefAttribute" id="8366617727056675894" nodeInfo="ng">
       <property name="showTraces" value="true" />
-      <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="8366617727056675895" nodeInfo="ng">
+      <node role="refs" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="8366617727056675895" nodeInfo="ng">
         <link role="provider" roleId="26ao.439567521322959423" targetNodeId="6ega.4362365420520357874" resolveInfo="PacemakerModel4_DDD_Requirements" />
       </node>
     </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="x27k.ModuleImport" typeId="x27k.1317894735999299713" id="8981275410095913923" nodeInfo="ng">
-      <link role="module" roleId="x27k.1317894735999299714" targetNodeId="8366617727056674801" resolveInfo="CommonDeclarations" />
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="5056520103092062857" nodeInfo="ng">
+      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="8366617727056674801" resolveInfo="CommonDeclarations" />
     </node>
   </root>
   <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="7745462878239974443" nodeInfo="ng">
@@ -2017,6 +2023,12 @@
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7745462878239732009" nodeInfo="ng" />
           </node>
         </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5056520103092667368" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5056520103092667417" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="q5q6.LastTimeEventOccurred" typeId="q5q6.6937663792687151477" id="5056520103092667413" nodeInfo="ng">
+            <node role="stateMachine" roleId="q5q6.6937663792687151478" type="mj1l.Expression" typeId="mj1l.8860443239512128050" id="5056520103092667415" nodeInfo="ng" />
+          </node>
+        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7745462878239974605" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7745462878239974606" nodeInfo="ng" />
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="7745462878239974607" nodeInfo="ng" />
@@ -2031,9 +2043,9 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7745462878239974610" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1381309126600_2" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="7745462878239974611" nodeInfo="ng">
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.requirements.structure.ReqModuleRefAttribute" id="7745462878239974611" nodeInfo="ng">
       <property name="showTraces" value="true" />
-      <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="7745462878239974612" nodeInfo="ng">
+      <node role="refs" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="7745462878239974612" nodeInfo="ng">
         <link role="provider" roleId="26ao.439567521322959423" targetNodeId="6ega.5032647542476723514" resolveInfo="PacemakerModel3_VVI_Requirements" />
       </node>
     </node>
@@ -2960,9 +2972,9 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7912214418678744871" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1381309126600_2" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="7912214418678744872" nodeInfo="ng">
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.requirements.structure.ReqModuleRefAttribute" id="7912214418678744872" nodeInfo="ng">
       <property name="showTraces" value="true" />
-      <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="7912214418678744873" nodeInfo="ng">
+      <node role="refs" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="7912214418678744873" nodeInfo="ng">
         <link role="provider" roleId="26ao.439567521322959423" targetNodeId="6ega.5032647542476723514" resolveInfo="PacemakerModel3_VVI_Requirements" />
       </node>
     </node>
@@ -4557,9 +4569,9 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="8329552506046845377" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1381414033496_23" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="8329552506045859737" nodeInfo="ng">
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.requirements.structure.ReqModuleRefAttribute" id="8329552506045859737" nodeInfo="ng">
       <property name="showTraces" value="true" />
-      <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="8329552506045860319" nodeInfo="ng">
+      <node role="refs" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="8329552506045860319" nodeInfo="ng">
         <link role="provider" roleId="26ao.439567521322959423" targetNodeId="8366617727056675277" resolveInfo="PacemakerModel4_DDD_Requirements" />
       </node>
     </node>
@@ -5902,9 +5914,9 @@
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5032647542476483240" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1381309126600_2" />
     </node>
-    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="75wo.ReqModuleRefAttribute" typeId="75wo.3402431285977874460" id="5032647542476911387" nodeInfo="ng">
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.requirements.structure.ReqModuleRefAttribute" id="5032647542476911387" nodeInfo="ng">
       <property name="showTraces" value="f" />
-      <node role="refs" roleId="26ao.439567521322959424" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="5032647542476912068" nodeInfo="ng">
+      <node role="refs" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="5032647542476912068" nodeInfo="ng">
         <link role="provider" roleId="26ao.439567521322959423" targetNodeId="6ega.5032647542476723514" resolveInfo="PacemakerModel3_VVI_Requirements" />
       </node>
     </node>
