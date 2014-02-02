@@ -509,7 +509,7 @@
           <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529108230" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529108231" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529108232" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Atria sense - signal from the hear - atria paced" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Atrial Sense - signal from the heart - atria paced" />
               </node>
             </node>
           </node>
@@ -521,7 +521,7 @@
           <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529108262" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529108263" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529108264" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Ventricular sense" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Ventricular Sense" />
               </node>
             </node>
           </node>
@@ -592,7 +592,7 @@
           <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529119075" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529119076" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529119077" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Machine request to perform artificial atrial pace" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Machine request to perform an artificial atrial pace" />
               </node>
             </node>
           </node>
@@ -604,7 +604,7 @@
           <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529129960" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529129961" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529129962" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Perform artificial ventricular pace" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Perform an artificial ventricular pace" />
               </node>
             </node>
           </node>
@@ -616,7 +616,7 @@
           <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529130018" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529130019" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529130020" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Register a natural atrial pace - the heart worked itseld correctly" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Register a natural atrial pace - the heart worked itself correctly" />
               </node>
             </node>
           </node>
@@ -640,7 +640,7 @@
           <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529374323" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529374324" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529374325" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Reports a bad configuration to the doctor" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Reports a bad configuration to the doctor - some parameters must be reset" />
               </node>
             </node>
           </node>
@@ -662,7 +662,7 @@
           <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529130074" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529130075" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529130076" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Number of ticks passed from AP or APN - an atrial pace, artificial or natural.\nAP or APN are called combined an Atrial Event." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Number of ticks passed after AP or APN - an atrial pace, artificial or natural.\nAP or APN are called combined as  atrial events. The same about VP and VPN." />
               </node>
             </node>
           </node>
@@ -684,7 +684,7 @@
           <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529143411" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529143412" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529143413" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Number of ticks passed from VP or VPN - after a ventricular pace" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Number of ticks passed from VP or VPN - after a ventricular pace/event" />
               </node>
             </node>
           </node>
@@ -706,7 +706,7 @@
           <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529157442" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529157443" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529157444" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Parameters are set before the machine starts working. Machine functions \ndepending on them\n\nLRI - longest interval for a full heart cycle (A pace + V pace) in ticks" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Parameters are set before the machine starts working. The machine functions \ndepending on them.\n\nLRI - longest interval for a full heart cycle (A pace + V pace) in ticks" />
               </node>
             </node>
           </node>
@@ -772,7 +772,7 @@
           <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529197963" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529197964" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529197965" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Shortest interval for a full heart cycle in ticks\nAVI + AEI == LRI normally" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Shortest interval for a full heart cycle in ticks\nAVI + AEI == LRI" />
               </node>
             </node>
           </node>
@@ -794,7 +794,7 @@
           <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529212333" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529212334" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529212335" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="After a V pace, a heart is refracting. During the refractory period it remains \nelectrically noise. During Ventricular Refractory Period the ventricular senses\nare to be ignored - they are false electrical noise." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="After a V pace, a heart is refracting. During the refractory period it remains \nelectrically noisy. During Ventricular Refractory Period ventricular senses\nare to be ignored - they are false electrical noise." />
               </node>
             </node>
           </node>
@@ -816,7 +816,7 @@
           <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529250578" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529250579" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529250580" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Post-Ventricular Atrial Refractory Period - during it atria senses are to be \nignored." />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Post-Ventricular Atrial Refractory Period - during it atria senses are to be \nignored, for the same electrical noise nature." />
               </node>
             </node>
           </node>
@@ -905,7 +905,7 @@
                 <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529263938" nodeInfo="ng">
                   <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529263939" nodeInfo="ng">
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529263940" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="-2 is added because state transitions happen on tick, this is for precision" />
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="- 2 is added because state transitions happen on tick, this is for precision" />
                     </node>
                   </node>
                 </node>
@@ -957,7 +957,6 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="172131536229023836" nodeInfo="ng" />
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="172131536229023837" nodeInfo="ng">
           <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="172131536229023878" resolveInfo="WaitAfterVentricularEvent" />
           <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="172131536229023838" nodeInfo="ng">
@@ -980,7 +979,7 @@
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529288089" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529288090" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529288091" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="time since V is 1 - because VP is sent on the last tick" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="time since V is 1 - because VP is sent on the previous tick" />
                 </node>
               </node>
             </node>
@@ -1006,7 +1005,7 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="172131536229023849" nodeInfo="ng" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="3052517455958352658" nodeInfo="ng" />
         <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="172131536229023850" nodeInfo="ng">
           <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="172131536229023878" resolveInfo="WaitAfterVentricularEvent" />
           <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="172131536229023851" nodeInfo="ng">
@@ -1413,45 +1412,11 @@
         <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529095315" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529095316" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529095317" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This state machine implements a DDD pacing logic. \nA heart has two atria and two ventricles. The pacemaker paces both atria\nat the same time. It paces both ventricles at the same time as well. So the\nmachine has AP event to make an Atria Pace - for both atria, and VP event to \nmake Ventricular Pace - for both ventricles.\nWhy it is called DDD? First D means that it paces atria and ventricles - dual \npacing. Second D means that it senses dual chambers. And last D means dual \nfunctionality - it can pace or inhibit, if a pace is detected." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This state machine implements a DDD pacing logic. \n\nBasic background information:\nA heart has two atria and two ventricles. The pacemaker paces both atria\nat the same time. It paces both ventricles at the same time as well. So the\nmachine has AP event to make an Atrial Pace - for both atria, and VP event to \nmake a Ventricular Pace - for both ventricles.\n\nWhy is it called DDD? First D means that it paces atria and ventricles - dual \npacing. Second D means that it senses both atria and ventricles - dual sensing. \nAnd last D means dual functionality - it can artificially pace or inhibit, \nif a natural pace has been detected." />
             </node>
           </node>
         </node>
       </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="172131536229024010" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1381413952860_14" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="7491611015803935745" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1391091252794_3" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="172131536229024014" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="AS_Detected" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="172131536229024015" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-      </node>
-      <node role="init" roleId="x27k.2771264470558526601" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="172131536229024016" nodeInfo="ng" />
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8111704627529544399" nodeInfo="ng">
-        <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529544400" nodeInfo="ng">
-          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529544401" nodeInfo="ng">
-            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529544402" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Volatile flags are written be hardware, when senses appear. They \ncan be used when this software is deployed, for verification they are\nreplaced with generateEnvironmentState function" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalVariableDeclaration" typeId="x27k.6610873504380335822" id="172131536229024017" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="VS_Detected" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="172131536229024018" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="true" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-      </node>
-      <node role="init" roleId="x27k.2771264470558526601" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="172131536229024019" nodeInfo="ng" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="172131536229024020" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1383652779004_3" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="172131536229024021" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="empty_1384337972127_4" />
@@ -1470,6 +1435,15 @@
         <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="172131536229024026" nodeInfo="ng">
           <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
           <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="3052517455958470500" nodeInfo="ng">
+        <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="3052517455958470501" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="3052517455958470502" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="3052517455958470503" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Senses detected from the heart" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -1682,7 +1656,7 @@
         <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529554481" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529554482" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529554483" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This is the code, defining, how a machine should react on environmental\nreadings. Basically, it is informed aobut the senses." />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This is the code, defining, how a machine should be informed on environmental\nreadings." />
             </node>
           </node>
         </node>
@@ -1700,7 +1674,7 @@
         <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529555263" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529555264" nodeInfo="ng">
             <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529555265" nodeInfo="ng">
-              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Sets up the history for verification depth" />
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="Sets up the history for verification depth, should be similar to unwinding depth,\nusually." />
             </node>
           </node>
         </node>
@@ -1733,7 +1707,7 @@
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529592407" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529592408" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529592409" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="LRL and URL are Limits, which correspond to LRI and URI respectfully.\nThey are set up by a doctor, and the measurement unit is Beatrs Per Minute.\nCan be added as a physical unit in mbeddr." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="LRL and URL are Limits, which correspond to LRI and URI respectfully.\nThey are set up by a doctor, and the measurement unit is beats per minute.\nCan be added as a physical unit in mbeddr." />
                 </node>
               </node>
             </node>
@@ -1825,7 +1799,7 @@
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627530301788" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627530301789" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627530301790" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="The parameters are set by a doctor in a certain limits, given \nby the specification. We produce them nondeterministically - to \nverify with the all possible values!\n(Simplified safely (more values are verified) -\nstep size is not taken into account), see the params_spec.pdf figure." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="The parameters are set by a doctor in a certain limits, given \nby the specification. We produce them nondeterministically - to \nverify with all the possible values!\n\nThe counterexample trace starts, telling the parameter values, at\nwhich the failure happens." />
                 </node>
               </node>
             </node>
@@ -1846,7 +1820,7 @@
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529605992" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529605993" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529605994" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Used to convert milliseconds into ticks, To ensure the needed precision, has to be \nat max 8, but to speed up the verification, can set up higher." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Used to convert milliseconds into ticks, To ensure the needed precision, has to be \nat max 8, but to demonstrate the verification, it is set up higher,\nthe lower unwinding count is thus possible." />
                 </node>
               </node>
             </node>
@@ -2187,7 +2161,7 @@
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627530326423" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627530326424" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627530326425" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="The starting state for the verification. The machine resides in a state right after a \nventricular pace. Some internal variables are not fixed! This is a set substate thus.\nParameters are to stay constant, they are not allow to vary, during the machine run." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="The starting state for the verification. The machine resides in a state right after a \nventricular pace. The timeSinveAEvent internal variable is not fixed! Thus the\ninvariant describes a state subset, and not a signle state of the state machine.\n\nParameters are to stay constant, they are not allowed to vary, during the machine run." />
                 </node>
               </node>
             </node>
@@ -2233,7 +2207,7 @@
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627530340770" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627530340771" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627530340772" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="The loop below is to represent multiple call to a timer handler.\nEach time environment is read, the machine is informed on senses,\nthe machine is informed on the tick elapsed. The loop is covering a full\nmazimally long heart cycle (LRI) and 4 more ticks just to exceed the LRI. \n\ntime - is a special variable used by the history language, it\ncorresponds to a number of ticks elapsed." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="The loop below is to represent multiple call to a timer handler.\nEach time the environment is read, the machine is informed on senses,\nthe verification conditions are checked, then  the machine is informed \non the elapsed tick. \n\nThe loop is covering a full maximally long heart cycle (LRI) \nand 4 more ticks just to exceed the LRI, covering slightly more than \na single heart cycle.\n\ntime - is a special variable used by the history language, it\ncorresponds to a number of ticks elapsed." />
                 </node>
               </node>
             </node>
@@ -2384,7 +2358,7 @@
                 <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627530383504" nodeInfo="ng">
                   <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627530383505" nodeInfo="ng">
                     <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627530383506" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Checks non det init worked correctyl" />
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Checks that nondeterministic initialization worked correctly, \nwhich means we indeed start the verification from the invariant state \nsubset." />
                     </node>
                   </node>
                 </node>
