@@ -230,10 +230,10 @@
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.AssertionsCBMCAnalysis" typeId="q5q6.6472990431940227507" id="172131536229023629" nodeInfo="ng">
       <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="254" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="27" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="10000" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="none" />
-      <property name="sliceFormula" nameId="q5q6.9134944440162076206" value="false" />
+      <property name="sliceFormula" nameId="q5q6.9134944440162076206" value="true" />
       <link role="entryPoint" roleId="q5q6.6472990431939799908" targetNodeId="172131536229024106" resolveInfo="DDD_Verification" />
     </node>
     <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="172131536229023630" nodeInfo="ng">
@@ -1730,7 +1730,7 @@
       <property name="name" nameId="tpck.1169194664001" value="empty_1384337971432_2" />
     </node>
     <node role="contents" roleId="x27k.6437088627575722833" type="xnma.HistoryDepth" typeId="xnma.1006354465700605897" id="172131536229024104" nodeInfo="ng">
-      <property name="depth" nameId="xnma.1006354465700625433" value="300" />
+      <property name="depth" nameId="xnma.1006354465700625433" value="30" />
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8111704627529555262" nodeInfo="ng">
         <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529555263" nodeInfo="ng">
           <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529555264" nodeInfo="ng">
@@ -1875,13 +1875,13 @@
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="172131536229024123" nodeInfo="ng">
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-            <property name="value" nameId="mj1l.2212975673976043696" value="8" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="87" />
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8111704627529605991" nodeInfo="ng">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529605992" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529605993" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529605994" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Used to convert milliseconds into ticks" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Used to convert milliseconds into ticks, To ensure the needed precision, has to be \nat max 8, but to speed up the verification, can set up higher." />
                 </node>
               </node>
             </node>
