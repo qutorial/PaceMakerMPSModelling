@@ -22,7 +22,6 @@
   <import index="75wo" modelUID="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" version="15" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="2c95" modelUID="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" version="12" implicit="yes" />
-  <import index="6ega" modelUID="r:891616ce-8f9b-40f0-ac5c-2f8764f82513(pacemakermodel.model1)" version="-1" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="11" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="30" implicit="yes" />
@@ -32,12 +31,9 @@
   <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="27" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="172131536229023573" nodeInfo="ng">
     <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.StaticLibrary" typeId="51wr.2671893947946158498" id="172131536229023574" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="bla" />
+      <property name="name" nameId="tpck.1169194664001" value="VerifiedDDD" />
       <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="172131536229319296" nodeInfo="ng">
         <link role="module" roleId="51wr.7717755763392524108" targetNodeId="172131536229023751" resolveInfo="PacemakerModel4_DDD" />
-      </node>
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="172131536229512660" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="172131536229023631" resolveInfo="CommonDeclarations" />
       </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="172131536229023577" nodeInfo="ng">
@@ -238,37 +234,6 @@
     </node>
     <node role="imports" roleId="q46j.559958203687603517" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="172131536229023630" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="172131536229023751" resolveInfo="PacemakerModel4_DDD" />
-    </node>
-  </root>
-  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="172131536229023631" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="CommonDeclarations" />
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="172131536229023632" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="wait" />
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="172131536229023633" nodeInfo="ng">
-        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-      </node>
-      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="172131536229023634" nodeInfo="ng">
-        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="172131536229023635" nodeInfo="ng" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="172131536229023636" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1381311244622_9" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="172131536229023637" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1381311244908_10" />
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.GlobalConstantDeclaration" typeId="x27k.3788988821851860886" id="172131536229023638" nodeInfo="ng">
-      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="maximalCycleLengthOldNotUsed" />
-      <node role="value" roleId="x27k.3376775282622233992" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="172131536229023639" nodeInfo="ng">
-        <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-        <property name="value" nameId="mj1l.2212975673976043696" value="1200" />
-      </node>
-    </node>
-    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="172131536229023640" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="empty_1381311245115_11" />
     </node>
   </root>
   <root type="2c95.DocumentConfig" typeId="2c95.6386504476136472782" id="172131536229023641" nodeInfo="ng">
@@ -2667,12 +2632,8 @@
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type=".com.mbeddr.cc.requirements.structure.ReqModuleRefAttribute" id="172131536229024382" nodeInfo="ng">
       <property name="showTraces" value="true" />
       <node role="refs" type="26ao.TraceTargetProviderRef" typeId="26ao.439567521322959422" id="172131536229024383" nodeInfo="ng">
-        <link role="provider" roleId="26ao.439567521322959423" targetNodeId="6ega.4362365420520357874" resolveInfo="PacemakerModel4_DDD_Requirements" />
+        <link role="provider" roleId="26ao.439567521322959423" targetNodeId="172131536229023644" resolveInfo="PacemakerModel4_DDD_Requirements" />
       </node>
-    </node>
-    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="172131536229024384" nodeInfo="ng">
-      <property name="reexport" nameId="vs0r.747084250476874891" value="false" />
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="172131536229023631" resolveInfo="CommonDeclarations" />
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8111704627528997681" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="172131536229023644" resolveInfo="PacemakerModel4_DDD_Requirements" />
