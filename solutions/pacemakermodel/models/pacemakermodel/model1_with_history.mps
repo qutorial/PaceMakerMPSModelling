@@ -506,6 +506,19 @@
       <property name="name" nameId="tpck.1169194664001" value="DDD_Machine" />
       <property name="exported" nameId="x27k.1317894735999272944" value="true" />
       <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="172131536229023797" resolveInfo="Start" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="172131536229023756" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="tick" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8111704627529108293" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529108294" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529108295" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529108296" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="A timer signal, triggered after equal time intervals" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="3567122084705514249" nodeInfo="ng" />
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="172131536229023754" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="AS" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8111704627529108229" nodeInfo="ng">
@@ -530,65 +543,7 @@
           </node>
         </node>
       </node>
-      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="172131536229023756" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="tick" />
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8111704627529108293" nodeInfo="ng">
-          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529108294" nodeInfo="ng">
-            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529108295" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529108296" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="A timer signal, triggered after equal time intervals" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="172131536229023757" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="setParams" />
-        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="172131536229023758" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="LRI" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="172131536229023759" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          </node>
-        </node>
-        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="172131536229023760" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="URI" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="172131536229023761" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          </node>
-        </node>
-        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="172131536229023762" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="AVI" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="172131536229023763" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          </node>
-        </node>
-        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="172131536229023764" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="VRP" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="172131536229023765" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          </node>
-        </node>
-        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="172131536229023766" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="PVARP" />
-          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="172131536229023767" nodeInfo="ng">
-            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
-            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
-          </node>
-        </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8111704627529119066" nodeInfo="ng">
-          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529119067" nodeInfo="ng">
-            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529119068" nodeInfo="ng">
-              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529119069" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Initialization, setting the parameters" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="3567122084705342290" nodeInfo="ng" />
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.OutEvent" typeId="clqz.4643433264760980254" id="172131536229023768" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="AP" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8111704627529119074" nodeInfo="ng">
@@ -637,6 +592,7 @@
           </node>
         </node>
       </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="3567122084705361473" nodeInfo="ng" />
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.OutEvent" typeId="clqz.4643433264760980254" id="8111704627529321193" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="SignalError" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8111704627529374322" nodeInfo="ng">
@@ -649,6 +605,7 @@
           </node>
         </node>
       </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="3567122084705362518" nodeInfo="ng" />
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="172131536229023772" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="timeSinceAEvent" />
         <property name="readable" nameId="clqz.4497436839299253152" value="true" />
@@ -693,6 +650,54 @@
           </node>
         </node>
       </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="3567122084705360429" nodeInfo="ng" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="172131536229023757" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="setParams" />
+        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="172131536229023758" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="LRI" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="172131536229023759" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="172131536229023760" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="URI" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="172131536229023761" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="172131536229023762" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="AVI" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="172131536229023763" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="172131536229023764" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="VRP" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="172131536229023765" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="172131536229023766" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="PVARP" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="172131536229023767" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8111704627529119066" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529119067" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529119068" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529119069" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Initialization, setting the parameters" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="172131536229023778" nodeInfo="ng">
         <property name="readable" nameId="clqz.4497436839299253152" value="true" />
         <property name="writable" nameId="clqz.4497436839299253153" value="false" />
@@ -709,7 +714,7 @@
           <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529157442" nodeInfo="ng">
             <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529157443" nodeInfo="ng">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529157444" nodeInfo="ng">
-                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Parameters are set before the machine starts working. The machine functions \ndepending on them.\n\nLRI - longest interval for a full heart cycle (A pace + V pace) in ticks" />
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Parameters are set before the machine starts working. The machine functions \ndepending on them.\nLRI - longest interval for a full heart cycle (A pace + V pace) in ticks" />
               </node>
             </node>
           </node>
@@ -919,7 +924,7 @@
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529263930" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529263931" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529263932" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Initialization" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Initialization\nTODO: Could be done not as an event? Make writable params?" />
                 </node>
               </node>
             </node>
@@ -934,7 +939,7 @@
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529277444" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627529277445" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627529277446" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="After first tick the initialized machine paces the heart - to enforce \nsynchronization with it." />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="After first tick the initialized machine paces the heart - \nto enforce synchronization with it." />
                 </node>
               </node>
             </node>
@@ -1016,7 +1021,7 @@
           </node>
           <node role="actions" roleId="clqz.1270667558200946447" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="172131536229023852" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="172131536229023853" nodeInfo="ng">
-              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PreIncrementExpression" typeId="mj1l.4375898003726285487" id="172131536229023854" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="3567122084705617557" nodeInfo="ng">
                 <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="172131536229023855" nodeInfo="ng">
                   <link role="var" roleId="clqz.1786180596061383228" targetNodeId="172131536229023772" resolveInfo="timeSinceAEvent" />
                 </node>
@@ -1062,6 +1067,13 @@
             <link role="event" roleId="clqz.8951398808641876049" targetNodeId="172131536229023756" resolveInfo="tick" />
           </node>
           <node role="actions" roleId="clqz.1270667558200946447" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="172131536229023868" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="172131536229023873" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="3567122084705682632" nodeInfo="ng">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="172131536229023875" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="172131536229023775" resolveInfo="timeSinceVEvent" />
+                </node>
+              </node>
+            </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="172131536229023869" nodeInfo="ng">
               <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="172131536229023870" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="172131536229023871" nodeInfo="ng">
@@ -1070,13 +1082,6 @@
                 </node>
                 <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="172131536229023872" nodeInfo="ng">
                   <link role="var" roleId="clqz.1786180596061383228" targetNodeId="172131536229023772" resolveInfo="timeSinceAEvent" />
-                </node>
-              </node>
-            </node>
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="172131536229023873" nodeInfo="ng">
-              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PreIncrementExpression" typeId="mj1l.4375898003726285487" id="172131536229023874" nodeInfo="ng">
-                <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="172131536229023875" nodeInfo="ng">
-                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="172131536229023775" resolveInfo="timeSinceVEvent" />
                 </node>
               </node>
             </node>
