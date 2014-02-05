@@ -1,0 +1,4 @@
+Please, use cav14 branch to test with mbeddr installer.
+
+git checkout cav14
+
