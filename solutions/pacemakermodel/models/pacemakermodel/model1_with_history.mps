@@ -15,7 +15,7 @@
   <import index="51wr" modelUID="r:b31f1c3c-99aa-4f1e-a329-cba27efb1a6b(com.mbeddr.core.buildconfig.structure)" version="1" implicit="yes" />
   <import index="yq40" modelUID="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" version="4" implicit="yes" />
   <import index="26ao" modelUID="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" version="5" implicit="yes" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="22" implicit="yes" />
+  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="23" implicit="yes" />
   <import index="k146" modelUID="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" version="21" implicit="yes" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" implicit="yes" />
   <import index="clqz" modelUID="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" version="15" implicit="yes" />
@@ -31,10 +31,16 @@
   <import index="q5q6" modelUID="r:5d65e582-fa41-4818-b31c-b2aee1644b4a(com.mbeddr.analyses.cbmc.structure)" version="27" implicit="yes" />
   <root type="51wr.BuildConfiguration" typeId="51wr.7717755763392524104" id="172131536229023573" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="config" />
-    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.StaticLibrary" typeId="51wr.2671893947946158498" id="172131536229023574" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="VerifiedDDD" />
-      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="172131536229319296" nodeInfo="ng">
-        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="172131536229023751" resolveInfo="DDDSystem" />
+    <node role="binaries" roleId="51wr.5046689135694070731" type="51wr.Executable" typeId="51wr.5046689135693761554" id="5133753781276776370" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="test" />
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5133753781276776377" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5133753781276677262" resolveInfo="DDDSystemExec" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5133753781276776382" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5133753781276140168" resolveInfo="TestAdapter" />
+      </node>
+      <node role="referencedModules" roleId="51wr.5046689135693761559" type="51wr.ModuleRef" typeId="51wr.7717755763392524107" id="5133753781276782639" nodeInfo="ng">
+        <link role="module" roleId="51wr.7717755763392524108" targetNodeId="5133753781276223416" resolveInfo="stdio" />
       </node>
     </node>
     <node role="configurationItems" roleId="vs0r.4459718605982007338" type="k146.ReportingConfiguration" typeId="k146.4459718605982051949" id="172131536229023577" nodeInfo="ng">
@@ -228,7 +234,7 @@
     <node role="analyses" roleId="q46j.6472990431939692464" type="q5q6.AssertionsCBMCAnalysis" typeId="q5q6.6472990431940227507" id="172131536229023629" nodeInfo="ng">
       <property name="useCbmc" nameId="q5q6.4626864039426341465" value="true" />
       <property name="unwindingAssertions" nameId="q5q6.6472990431939799910" value="false" />
-      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="27" />
+      <property name="unwindingDepth" nameId="q5q6.6472990431939799909" value="100" />
       <property name="analysisDepth" nameId="q5q6.441761995014974059" value="10000" />
       <property name="timeoutInSeconds" nameId="q5q6.2263984427998442258" value="none" />
       <property name="sliceFormula" nameId="q5q6.9134944440162076206" value="true" />
@@ -1735,13 +1741,30 @@
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="172131536229024111" resolveInfo="lrl" />
             </node>
             <node role="constraints" roleId="q5q6.8985851583396455261" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="8111704627529822820" nodeInfo="ng">
-              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.LessEqualsExpression" typeId="mj1l.8860443239512147451" id="8111704627529858841" nodeInfo="ng">
-                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="8111704627529874774" nodeInfo="ng">
-                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                  <property name="value" nameId="mj1l.2212975673976043696" value="175" />
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6531934966743271022" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6531934966743345203" nodeInfo="ng">
+                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6531934966743367715" nodeInfo="ng">
+                    <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+                  </node>
+                  <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.ModuloExpression" typeId="mj1l.2799490600706093744" id="6531934966743318805" nodeInfo="ng">
+                    <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6531934966743318808" nodeInfo="ng">
+                      <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                      <property name="value" nameId="mj1l.2212975673976043696" value="5" />
+                    </node>
+                    <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6531934966743293153" nodeInfo="ng">
+                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="172131536229024111" resolveInfo="lrl" />
+                    </node>
+                  </node>
                 </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="8111704627529838278" nodeInfo="ng">
-                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="172131536229024111" resolveInfo="lrl" />
+                <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.LessEqualsExpression" typeId="mj1l.8860443239512147451" id="6531934966743135136" nodeInfo="ng">
+                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6531934966743154778" nodeInfo="ng">
+                    <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="50" />
+                  </node>
+                  <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="6531934966743065012" nodeInfo="ng">
+                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="172131536229024111" resolveInfo="lrl" />
+                  </node>
                 </node>
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.LessEqualsExpression" typeId="mj1l.8860443239512147451" id="8111704627529775481" nodeInfo="ng">
@@ -1817,7 +1840,7 @@
           </node>
           <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="172131536229024123" nodeInfo="ng">
             <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-            <property name="value" nameId="mj1l.2212975673976043696" value="87" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="8" />
           </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8111704627529605991" nodeInfo="ng">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627529605992" nodeInfo="ng">
@@ -2333,38 +2356,10 @@
               </node>
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="172131536229024301" nodeInfo="ng" />
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8111704627530383254" nodeInfo="ng" />
-            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.IfStatement" typeId="c4fa.6275792049641600983" id="172131536229024302" nodeInfo="ng">
-              <node role="thenPart" roleId="c4fa.6275792049641600985" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="172131536229024303" nodeInfo="ng">
-                <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.Assert" typeId="q5q6.6973658835837826905" id="172131536229024304" nodeInfo="ng">
-                  <node role="exp" roleId="q5q6.6973658835837826906" type="q5q6.SMInStateSubset" typeId="q5q6.9005445548778024784" id="172131536229024305" nodeInfo="ng">
-                    <link role="stateSubset" roleId="q5q6.9005445548778024787" targetNodeId="172131536229024146" resolveInfo="Invariant" />
-                    <node role="stateMachine" roleId="q5q6.9005445548778024785" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="172131536229024306" nodeInfo="ng">
-                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="172131536229024251" resolveInfo="ddd" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node role="condition" roleId="c4fa.6275792049641600984" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="172131536229024307" nodeInfo="ng">
-                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="172131536229024308" nodeInfo="ng">
-                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                  <property name="value" nameId="mj1l.2212975673976043696" value="0" />
-                </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type="q5q6.CurrentTime" typeId="q5q6.8985851583396646862" id="172131536229024309" nodeInfo="ng" />
-              </node>
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8111704627530383503" nodeInfo="ng">
-                <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8111704627530383504" nodeInfo="ng">
-                  <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="8111704627530383505" nodeInfo="ng">
-                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="8111704627530383506" nodeInfo="ng">
-                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="Checks that nondeterministic initialization worked correctly, \nwhich means we indeed start the verification from the invariant state \nsubset." />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="172131536229024311" nodeInfo="ng" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="6531934966743003584" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.AfterPThenQ" typeId="q5q6.7573444803550855448" id="172131536229024312" nodeInfo="ng">
-              <property name="disabled" nameId="q5q6.8330520303445148918" value="false" />
+              <property name="disabled" nameId="q5q6.8330520303445148918" value="true" />
               <node role="p" roleId="q5q6.7392194941658581813" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="172131536229024313" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="172131536229024314" nodeInfo="ng">
                   <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
@@ -2428,7 +2423,7 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="172131536229024336" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.AfterPThenQ" typeId="q5q6.7573444803550855448" id="172131536229024337" nodeInfo="ng">
-              <property name="disabled" nameId="q5q6.8330520303445148918" value="false" />
+              <property name="disabled" nameId="q5q6.8330520303445148918" value="true" />
               <node role="p" roleId="q5q6.7392194941658581813" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="172131536229024338" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="172131536229024339" nodeInfo="ng">
                   <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
@@ -2459,7 +2454,7 @@
             </node>
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="8111704627530385781" nodeInfo="ng" />
             <node role="statements" roleId="c4fa.4185783222026475862" type="q5q6.AfterPThenQ" typeId="q5q6.7573444803550855448" id="172131536229024346" nodeInfo="ng">
-              <property name="disabled" nameId="q5q6.8330520303445148918" value="false" />
+              <property name="disabled" nameId="q5q6.8330520303445148918" value="true" />
               <node role="p" roleId="q5q6.7392194941658581813" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="172131536229024347" nodeInfo="ng">
                 <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="172131536229024348" nodeInfo="ng">
                   <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
@@ -2470,10 +2465,10 @@
                 </node>
               </node>
               <node role="q" roleId="q5q6.7392194941658581814" type="mj1l.LessEqualsExpression" typeId="mj1l.8860443239512147451" id="172131536229024350" nodeInfo="ng">
-                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="172131536229024351" nodeInfo="ng">
-                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="172131536229024352" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="6429350792942679185" nodeInfo="ng">
+                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6429350792942679188" nodeInfo="ng">
                     <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-                    <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+                    <property name="value" nameId="mj1l.2212975673976043696" value="6" />
                   </node>
                   <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="172131536229024353" nodeInfo="ng">
                     <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="172131536229024143" resolveInfo="AEI" />
@@ -2601,6 +2596,1279 @@
     </node>
     <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="8111704627528997681" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="172131536229023644" resolveInfo="DDDRequirements" />
+    </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5133753781276140168" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="TestAdapter" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5133753781276215258" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1392365097408_1" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5133753781276215263" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="main" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781276215265" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5133753781276215266" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5133753781276215871" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="ddd" />
+          <node role="type" roleId="mj1l.318113533128716676" type="clqz.StatemachineType" typeId="clqz.7851711690674263345" id="5133753781277471983" nodeInfo="ng">
+            <link role="machine" roleId="clqz.7851711690674263346" targetNodeId="5133753781276677264" resolveInfo="DDD_Machine" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5133753781277472294" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5133753781276216631" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.InitializeSMStatement" typeId="clqz.1786180596061208520" id="5133753781276592777" nodeInfo="ng">
+          <node role="statemachine" roleId="clqz.1786180596061208522" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5133753781276593045" nodeInfo="ng">
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5133753781276215871" resolveInfo="ddd" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5133753781276216803" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="5133753781277542405" nodeInfo="ng">
+          <link role="event" roleId="clqz.1786180596061231919" targetNodeId="5133753781276677324" resolveInfo="setParams" />
+          <node role="statemachine" roleId="clqz.7851711690674279260" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5133753781277543159" nodeInfo="ng">
+            <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5133753781276215871" resolveInfo="ddd" />
+          </node>
+          <node role="args" roleId="clqz.2558982571829095260" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781277548162" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="10" />
+          </node>
+          <node role="args" roleId="clqz.2558982571829095260" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781277548823" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="4" />
+          </node>
+          <node role="args" roleId="clqz.2558982571829095260" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781277549738" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="3" />
+          </node>
+          <node role="args" roleId="clqz.2558982571829095260" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781277550851" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="2" />
+          </node>
+          <node role="args" roleId="clqz.2558982571829095260" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781277552162" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5133753781277540720" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5133753781276217917" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="exit" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.BooleanType" typeId="mj1l.8860443239512128058" id="5133753781276217915" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+          <node role="init" roleId="c4fa.4185783222026502647" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="5133753781276219174" nodeInfo="ng" />
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5133753781276220866" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.LocalVariableDeclaration" typeId="c4fa.4185783222026475238" id="5133753781276221241" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="c" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5133753781276221239" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5133753781276217558" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.WhileStatement" typeId="c4fa.8441331188640771826" id="5133753781276217325" nodeInfo="ng">
+          <node role="body" roleId="c4fa.8441331188640771828" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781276217326" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5133753781276219819" nodeInfo="ng" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276593290" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5133753781276593463" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5133753781276593662" nodeInfo="ng">
+                  <link role="function" roleId="x27k.5950410542643524493" targetNodeId="5133753781276517065" resolveInfo="getchar" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5133753781276593289" nodeInfo="ng">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5133753781276221241" resolveInfo="c" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5133753781276593946" nodeInfo="ng" />
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.SwitchStatement" typeId="c4fa.3134547887598524924" id="5133753781277534190" nodeInfo="ng">
+              <node role="expression" roleId="c4fa.3134547887598524925" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5133753781277534406" nodeInfo="ng">
+                <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5133753781276221241" resolveInfo="c" />
+              </node>
+              <node role="cases" roleId="c4fa.3134547887598524959" type="c4fa.SwitchCase" typeId="c4fa.3134547887598524928" id="5133753781277534626" nodeInfo="ng">
+                <node role="body" roleId="c4fa.3134547887598524931" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781277534627" nodeInfo="ng">
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="5133753781277535024" nodeInfo="ng">
+                    <link role="event" roleId="clqz.1786180596061231919" targetNodeId="5133753781276677271" resolveInfo="AS" />
+                    <node role="statemachine" roleId="clqz.7851711690674279260" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5133753781277535237" nodeInfo="ng">
+                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5133753781276215871" resolveInfo="ddd" />
+                    </node>
+                  </node>
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="5133753781277535494" nodeInfo="ng">
+                    <link role="event" roleId="clqz.1786180596061231919" targetNodeId="5133753781276677265" resolveInfo="tick" />
+                    <node role="statemachine" roleId="clqz.7851711690674279260" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5133753781277535721" nodeInfo="ng">
+                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5133753781276215871" resolveInfo="ddd" />
+                    </node>
+                  </node>
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.BreakStatement" typeId="c4fa.8441331188640862326" id="5133753781277534629" nodeInfo="ng" />
+                </node>
+                <node role="expression" roleId="c4fa.3134547887598524929" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="5133753781277534640" nodeInfo="ng">
+                  <property name="value" nameId="mj1l.1664480272136214701" value="a" />
+                </node>
+              </node>
+              <node role="cases" roleId="c4fa.3134547887598524959" type="c4fa.SwitchCase" typeId="c4fa.3134547887598524928" id="5133753781277535995" nodeInfo="ng">
+                <node role="body" roleId="c4fa.3134547887598524931" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781277535996" nodeInfo="ng">
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="5133753781277536656" nodeInfo="ng">
+                    <link role="event" roleId="clqz.1786180596061231919" targetNodeId="5133753781276677276" resolveInfo="VS" />
+                    <node role="statemachine" roleId="clqz.7851711690674279260" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5133753781277536882" nodeInfo="ng">
+                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5133753781276215871" resolveInfo="ddd" />
+                    </node>
+                  </node>
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="5133753781277537152" nodeInfo="ng">
+                    <link role="event" roleId="clqz.1786180596061231919" targetNodeId="5133753781276677265" resolveInfo="tick" />
+                    <node role="statemachine" roleId="clqz.7851711690674279260" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5133753781277537392" nodeInfo="ng">
+                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5133753781276215871" resolveInfo="ddd" />
+                    </node>
+                  </node>
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.BreakStatement" typeId="c4fa.8441331188640862326" id="5133753781277535998" nodeInfo="ng" />
+                </node>
+                <node role="expression" roleId="c4fa.3134547887598524929" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="5133753781277536254" nodeInfo="ng">
+                  <property name="value" nameId="mj1l.1664480272136214701" value="v" />
+                </node>
+              </node>
+              <node role="cases" roleId="c4fa.3134547887598524959" type="c4fa.SwitchCase" typeId="c4fa.3134547887598524928" id="5133753781277537717" nodeInfo="ng">
+                <node role="body" roleId="c4fa.3134547887598524931" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781277537718" nodeInfo="ng">
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.TriggerSMStatement" typeId="clqz.7851711690674279259" id="5133753781277539153" nodeInfo="ng">
+                    <link role="event" roleId="clqz.1786180596061231919" targetNodeId="5133753781276677265" resolveInfo="tick" />
+                    <node role="statemachine" roleId="clqz.7851711690674279260" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5133753781277539392" nodeInfo="ng">
+                      <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5133753781276215871" resolveInfo="ddd" />
+                    </node>
+                  </node>
+                  <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.BreakStatement" typeId="c4fa.8441331188640862326" id="5133753781277537720" nodeInfo="ng" />
+                </node>
+                <node role="expression" roleId="c4fa.3134547887598524929" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="5133753781277538799" nodeInfo="ng">
+                  <property name="value" nameId="mj1l.1664480272136214701" value="t" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276595800" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5133753781276596032" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="5133753781276596382" nodeInfo="ng">
+                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="5133753781276596717" nodeInfo="ng">
+                    <property name="value" nameId="mj1l.1664480272136214701" value="q" />
+                  </node>
+                  <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5133753781276596035" nodeInfo="ng">
+                    <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5133753781276221241" resolveInfo="c" />
+                  </node>
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5133753781276595799" nodeInfo="ng">
+                  <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5133753781276217917" resolveInfo="exit" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="condition" roleId="c4fa.8441331188640771827" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="5133753781276219411" nodeInfo="ng">
+            <node role="expression" roleId="mj1l.7254843406768839760" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="5133753781276219656" nodeInfo="ng">
+              <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="5133753781276217917" resolveInfo="exit" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5133753781276216976" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="5133753781276215531" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="x27k.ReturnStatement" typeId="x27k.8967919205527146149" id="5133753781276215273" nodeInfo="ng">
+          <node role="expression" roleId="x27k.8967919205527146150" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781276215274" nodeInfo="ng">
+            <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+            <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5133753781276215267" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="5133753781276215268" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="argc" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5133753781276215269" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="5133753781276215270" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="argv" />
+        <node role="type" roleId="mj1l.318113533128716676" type="yq40.ArrayType" typeId="yq40.5679441017214012545" id="5133753781276215271" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          <node role="baseType" roleId="yq40.2963921683065158286" type="yq40.StringType" typeId="yq40.6113173064528067332" id="5133753781276215272" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="5133753781276215256" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5133753781276677262" resolveInfo="DDDSystemExec" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="5133753781276543114" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5133753781276223416" resolveInfo="stdio" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.EmptyChunkDependency" typeId="vs0r.6867589085886993301" id="5133753781276223179" nodeInfo="ng" />
+  </root>
+  <root type="x27k.ExternalModule" typeId="x27k.6116558314501417921" id="5133753781276223416" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="stdio" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5133753781276515912" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1392365450628_3" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.FunctionPrototype" typeId="x27k.6437088627575724000" id="5133753781276517065" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="getchar" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5133753781276515917" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5133753781276595026" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1392365529147_5" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.FunctionPrototype" typeId="x27k.6437088627575724000" id="5133753781276595147" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="putchar" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5133753781276595037" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+      <node role="arguments" roleId="x27k.5708867820623310661" type="x27k.Argument" typeId="x27k.7892328519581704407" id="5133753781276595171" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="c" />
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int32tType" typeId="mj1l.8463282783691618440" id="5133753781276595170" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="descriptors" roleId="x27k.6116558314501417978" type="x27k.HeaderDescriptor" typeId="x27k.6116558314501417952" id="5133753781276223417" nodeInfo="ng">
+      <property name="path" nameId="x27k.6116558314501417936" value="&lt;stdio.h&gt;" />
+    </node>
+  </root>
+  <root type="x27k.ImplementationModule" typeId="x27k.6437088627575722830" id="5133753781276677262" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="DDDSystemExec" />
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5133753781277602268" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1392367541559_13" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5133753781277628754" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="newline" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781277628756" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781277633704" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5133753781277633703" nodeInfo="ng">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="5133753781276595147" resolveInfo="putchar" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="5133753781277636548" nodeInfo="ng">
+              <property name="value" nameId="mj1l.1664480272136214701" value="\r" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781277637041" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5133753781277637042" nodeInfo="ng">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="5133753781276595147" resolveInfo="putchar" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="5133753781277637043" nodeInfo="ng">
+              <property name="value" nameId="mj1l.1664480272136214701" value="\n" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5133753781277623798" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5133753781277614797" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1392367547302_14" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5133753781277498715" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="paceA" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781277498717" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781277507470" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5133753781277507469" nodeInfo="ng">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="5133753781276595147" resolveInfo="putchar" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="5133753781277508949" nodeInfo="ng">
+              <property name="value" nameId="mj1l.1664480272136214701" value="a" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781277637447" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5133753781277637446" nodeInfo="ng">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="5133753781277628754" resolveInfo="newline" />
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5133753781277495364" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5133753781277482678" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1392366361110_11" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.Function" typeId="x27k.6437088627575724001" id="5133753781277530069" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="paceV" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="false" />
+      <node role="body" roleId="x27k.4185783222026475860" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781277530070" nodeInfo="ng">
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781277530071" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5133753781277530072" nodeInfo="ng">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="5133753781276595147" resolveInfo="putchar" />
+            <node role="actuals" roleId="x27k.5950410542643524495" type="mj1l.CharLiteral" typeId="mj1l.1664480272136214700" id="5133753781277530073" nodeInfo="ng">
+              <property name="value" nameId="mj1l.1664480272136214701" value="v" />
+            </node>
+          </node>
+        </node>
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781277637493" nodeInfo="ng">
+          <node role="expr" roleId="c4fa.7254843406768833939" type="x27k.FunctionCall" typeId="x27k.5950410542643524492" id="5133753781277637492" nodeInfo="ng">
+            <link role="function" roleId="x27k.5950410542643524493" targetNodeId="5133753781277628754" resolveInfo="newline" />
+          </node>
+        </node>
+      </node>
+      <node role="type" roleId="mj1l.318113533128716676" type="mj1l.VoidType" typeId="mj1l.7892328519581699353" id="5133753781277530074" nodeInfo="ng">
+        <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+        <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5133753781277526701" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1392366415621_12" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5133753781277479790" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1392366360641_10" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5133753781277477961" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1392366360374_9" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5133753781277477591" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1392366360158_8" />
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="clqz.Statemachine" typeId="clqz.5778488248013533809" id="5133753781276677264" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="DDD_Machine" />
+      <property name="exported" nameId="x27k.1317894735999272944" value="true" />
+      <link role="initial" roleId="clqz.5778488248013533842" targetNodeId="5133753781276677382" resolveInfo="Start" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="5133753781276677265" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="tick" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677266" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677267" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677268" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677269" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="A timer signal, triggered after equal time intervals" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5133753781276677270" nodeInfo="ng" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="5133753781276677271" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="AS" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677272" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677273" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677274" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677275" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Atrial Sense - signal from the heart - atria paced" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="5133753781276677276" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="VS" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677277" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677278" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677279" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677280" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Ventricular Sense" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5133753781276677281" nodeInfo="ng" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.OutEvent" typeId="clqz.4643433264760980254" id="5133753781276677282" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="AP" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677283" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677284" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677285" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677286" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Machine request to perform an artificial atrial pace" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="binding" roleId="clqz.4643433264760985275" type="clqz.CFunctionBinding" typeId="clqz.567269909073788518" id="5133753781277533386" nodeInfo="ng">
+          <link role="fct" roleId="clqz.567269909073808458" targetNodeId="5133753781277498715" resolveInfo="paceA" />
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.OutEvent" typeId="clqz.4643433264760980254" id="5133753781276677287" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="VP" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677288" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677289" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677290" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677291" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Perform an artificial ventricular pace" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="binding" roleId="clqz.4643433264760985275" type="clqz.CFunctionBinding" typeId="clqz.567269909073788518" id="5133753781277533394" nodeInfo="ng">
+          <link role="fct" roleId="clqz.567269909073808458" targetNodeId="5133753781277530069" resolveInfo="paceV" />
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.OutEvent" typeId="clqz.4643433264760980254" id="5133753781276677292" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="APN" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677293" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677294" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677295" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677296" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Register a natural atrial pace - the heart worked itself correctly" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.OutEvent" typeId="clqz.4643433264760980254" id="5133753781276677297" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="VPN" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677298" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677299" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677300" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677301" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Register a natural ventricular pace" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5133753781276677302" nodeInfo="ng" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.OutEvent" typeId="clqz.4643433264760980254" id="5133753781276677303" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="SignalError" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677304" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677305" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677306" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677307" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Reports a bad configuration to the doctor - some parameters must be reset" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5133753781276677308" nodeInfo="ng" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="5133753781276677309" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="timeSinceAEvent" />
+        <property name="readable" nameId="clqz.4497436839299253152" value="true" />
+        <property name="writable" nameId="clqz.4497436839299253153" value="false" />
+        <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781276677310" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5133753781276677311" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677312" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677313" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677314" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677315" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Number of ticks passed after AP or APN - an atrial pace, artificial or natural.\nAP or APN are called combined as  atrial events. The same about VP and VPN." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="5133753781276677316" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="timeSinceVEvent" />
+        <property name="readable" nameId="clqz.4497436839299253152" value="true" />
+        <property name="writable" nameId="clqz.4497436839299253153" value="false" />
+        <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781276677317" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5133753781276677318" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677319" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677320" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677321" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677322" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Number of ticks passed from VP or VPN - after a ventricular pace/event" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5133753781276677323" nodeInfo="ng" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.InEvent" typeId="clqz.4643433264760980253" id="5133753781276677324" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="setParams" />
+        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="5133753781276677325" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="LRI" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5133753781276677326" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="5133753781276677327" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="URI" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5133753781276677328" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="5133753781276677329" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="AVI" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5133753781276677330" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="5133753781276677331" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="VRP" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5133753781276677332" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="args" roleId="clqz.1786180596061248896" type="clqz.EventArg" typeId="clqz.1786180596061248885" id="5133753781276677333" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="PVARP" />
+          <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5133753781276677334" nodeInfo="ng">
+            <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+            <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+          </node>
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677335" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677336" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677337" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677338" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Initialization, setting the parameters" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="5133753781276677339" nodeInfo="ng">
+        <property name="readable" nameId="clqz.4497436839299253152" value="true" />
+        <property name="writable" nameId="clqz.4497436839299253153" value="false" />
+        <property name="name" nameId="tpck.1169194664001" value="mLRI" />
+        <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781276677340" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5133753781276677341" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677342" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677343" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677344" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677345" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Parameters are set before the machine starts working. The machine functions \ndepending on them.\nLRI - longest interval for a full heart cycle (A pace + V pace) in ticks" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="5133753781276677346" nodeInfo="ng">
+        <property name="readable" nameId="clqz.4497436839299253152" value="true" />
+        <property name="writable" nameId="clqz.4497436839299253153" value="false" />
+        <property name="name" nameId="tpck.1169194664001" value="mAEI" />
+        <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781276677347" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5133753781276677348" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677349" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677350" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677351" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677352" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Longest time interval between V pace and A pace. Atrial Escape Interval." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="5133753781276677353" nodeInfo="ng">
+        <property name="readable" nameId="clqz.4497436839299253152" value="true" />
+        <property name="writable" nameId="clqz.4497436839299253153" value="false" />
+        <property name="name" nameId="tpck.1169194664001" value="mAVI" />
+        <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781276677354" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5133753781276677355" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677356" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677357" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677358" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677359" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Atria-Ventricular Interval - Longest time interval between A pace and V pace" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="5133753781276677360" nodeInfo="ng">
+        <property name="readable" nameId="clqz.4497436839299253152" value="true" />
+        <property name="writable" nameId="clqz.4497436839299253153" value="false" />
+        <property name="name" nameId="tpck.1169194664001" value="mURI" />
+        <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781276677361" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5133753781276677362" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677363" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677364" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677365" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677366" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Shortest interval for a full heart cycle in ticks\nAVI + AEI == LRI" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="5133753781276677367" nodeInfo="ng">
+        <property name="readable" nameId="clqz.4497436839299253152" value="true" />
+        <property name="writable" nameId="clqz.4497436839299253153" value="false" />
+        <property name="name" nameId="tpck.1169194664001" value="mVRP" />
+        <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781276677368" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5133753781276677369" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677370" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677371" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677372" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677373" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="After a V pace, a heart is refracting. During the refractory period it remains \nelectrically noisy. During Ventricular Refractory Period ventricular senses\nare to be ignored - they are false electrical noise." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.StatemachineVariableDeclaration" typeId="clqz.5633981208992643165" id="5133753781276677374" nodeInfo="ng">
+        <property name="readable" nameId="clqz.4497436839299253152" value="true" />
+        <property name="writable" nameId="clqz.4497436839299253153" value="false" />
+        <property name="name" nameId="tpck.1169194664001" value="mPVARP" />
+        <node role="init" roleId="clqz.4643433264760912612" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781276677375" nodeInfo="ng">
+          <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+          <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+        </node>
+        <node role="type" roleId="mj1l.318113533128716676" type="mj1l.Int16tType" typeId="mj1l.8463282783691618435" id="5133753781276677376" nodeInfo="ng">
+          <property name="volatile" nameId="mj1l.2941277002448691247" value="false" />
+          <property name="const" nameId="mj1l.2941277002445651368" value="false" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677377" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677378" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677379" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677380" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Post-Ventricular Atrial Refractory Period - during it atria senses are to be \nignored, for the same electrical noise nature." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5133753781276677381" nodeInfo="ng" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="5133753781276677382" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Start" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5133753781276677383" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="5133753781276677382" resolveInfo="Start" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5133753781276677384" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5133753781276677324" resolveInfo="setParams" />
+          </node>
+          <node role="actions" roleId="clqz.1270667558200946447" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781276677385" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677386" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5133753781276677387" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="5133753781276677388" nodeInfo="ng">
+                  <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="5133753781276677325" resolveInfo="LRI" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677389" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677339" resolveInfo="mLRI" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677390" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5133753781276677391" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="5133753781276677392" nodeInfo="ng">
+                  <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="5133753781276677327" resolveInfo="URI" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677393" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677360" resolveInfo="mURI" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677394" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5133753781276677395" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="5133753781276677396" nodeInfo="ng">
+                  <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="5133753781276677329" resolveInfo="AVI" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677397" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677353" resolveInfo="mAVI" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677398" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5133753781276677399" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="5133753781276677400" nodeInfo="ng">
+                  <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="5133753781276677333" resolveInfo="PVARP" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677401" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677374" resolveInfo="mPVARP" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677402" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5133753781276677403" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="clqz.EventArgRef" typeId="clqz.1786180596061258962" id="5133753781276677404" nodeInfo="ng">
+                  <link role="arg" roleId="clqz.1786180596061258963" targetNodeId="5133753781276677331" resolveInfo="VRP" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677405" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677367" resolveInfo="mVRP" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677406" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5133753781276677407" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="5133753781276677408" nodeInfo="ng">
+                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.MinusExpression" typeId="mj1l.5763383285156373018" id="5133753781276677409" nodeInfo="ng">
+                    <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781276677410" nodeInfo="ng">
+                      <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                      <property name="value" nameId="mj1l.2212975673976043696" value="2" />
+                    </node>
+                    <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677411" nodeInfo="ng">
+                      <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677353" resolveInfo="mAVI" />
+                    </node>
+                  </node>
+                  <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677412" nodeInfo="ng">
+                    <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677339" resolveInfo="mLRI" />
+                  </node>
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677413" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677346" resolveInfo="mAEI" />
+                </node>
+              </node>
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677414" nodeInfo="ng">
+                <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677415" nodeInfo="ng">
+                  <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677416" nodeInfo="ng">
+                    <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677417" nodeInfo="ng">
+                      <property name="escapedValue" nameId="87nw.2557074442922438158" value="- 2 is added because state transitions happen on tick, this is for precision" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677418" nodeInfo="ng">
+            <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677419" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677420" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677421" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Initialization\nTODO: Could be done not as an event? Make writable params?" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5133753781276677422" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="5133753781276677433" resolveInfo="PaceVentricularInit" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5133753781276677423" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5133753781276677265" resolveInfo="tick" />
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677424" nodeInfo="ng">
+            <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677425" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677426" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677427" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="After first tick the initialized machine paces the heart - \nto enforce synchronization with it." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677428" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677429" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677430" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677431" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Configuration before the implantation" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5133753781276677432" nodeInfo="ng" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="5133753781276677433" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="PaceVentricularInit" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EntryAction" typeId="clqz.4753668641245534592" id="5133753781276677434" nodeInfo="ng">
+          <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="5133753781276677435" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.SendOutEventStatement" typeId="clqz.8786207748510013887" id="5133753781276677436" nodeInfo="ng">
+              <link role="event" roleId="clqz.8786207748510013889" targetNodeId="5133753781276677287" resolveInfo="VP" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5133753781276677437" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="5133753781276677494" resolveInfo="WaitAfterVentricularEvent" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5133753781276677438" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5133753781276677265" resolveInfo="tick" />
+          </node>
+          <node role="actions" roleId="clqz.1270667558200946447" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781276677439" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677440" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5133753781276677441" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781276677442" nodeInfo="ng">
+                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677443" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677316" resolveInfo="timeSinceVEvent" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677444" nodeInfo="ng">
+            <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677445" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677446" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677447" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="time since V is 1 - because VP is sent on the previous tick" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677448" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677449" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677450" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677451" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Initial pace to synchronize with the heart at start" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5133753781276677452" nodeInfo="ng" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="5133753781276677453" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="PaceVentricular" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EntryAction" typeId="clqz.4753668641245534592" id="5133753781276677454" nodeInfo="ng">
+          <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="5133753781276677455" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.SendOutEventStatement" typeId="clqz.8786207748510013887" id="5133753781276677456" nodeInfo="ng">
+              <link role="event" roleId="clqz.8786207748510013889" targetNodeId="5133753781276677287" resolveInfo="VP" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="5133753781276677457" nodeInfo="ng" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5133753781276677458" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="5133753781276677494" resolveInfo="WaitAfterVentricularEvent" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5133753781276677459" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5133753781276677265" resolveInfo="tick" />
+          </node>
+          <node role="actions" roleId="clqz.1270667558200946447" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781276677460" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677461" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="5133753781276677462" nodeInfo="ng">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677463" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677309" resolveInfo="timeSinceAEvent" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677464" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5133753781276677465" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781276677466" nodeInfo="ng">
+                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677467" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677316" resolveInfo="timeSinceVEvent" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677468" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677469" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677470" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677471" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Perform a ventricular pace" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5133753781276677472" nodeInfo="ng" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="5133753781276677473" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="PaceArtrial" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EntryAction" typeId="clqz.4753668641245534592" id="5133753781276677474" nodeInfo="ng">
+          <node role="body" roleId="clqz.8409287311039042109" type="clqz.ActionList" typeId="clqz.1957198122968598264" id="5133753781276677475" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.SendOutEventStatement" typeId="clqz.8786207748510013887" id="5133753781276677476" nodeInfo="ng">
+              <link role="event" roleId="clqz.8786207748510013889" targetNodeId="5133753781276677282" resolveInfo="AP" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="5133753781276677477" nodeInfo="ng" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5133753781276677478" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="5133753781276677558" resolveInfo="WaitAfterArtrialEvent" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5133753781276677479" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5133753781276677265" resolveInfo="tick" />
+          </node>
+          <node role="actions" roleId="clqz.1270667558200946447" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781276677480" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677481" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PostIncrementExpression" typeId="mj1l.4375898003726285486" id="5133753781276677482" nodeInfo="ng">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677483" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677316" resolveInfo="timeSinceVEvent" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677484" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5133753781276677485" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781276677486" nodeInfo="ng">
+                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="1" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677487" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677309" resolveInfo="timeSinceAEvent" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="5133753781276677488" nodeInfo="ng" />
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677489" nodeInfo="ng">
+          <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677490" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677491" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677492" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="Perform an atrial pace" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5133753781276677493" nodeInfo="ng" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="5133753781276677494" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="WaitAfterVentricularEvent" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5133753781276677495" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="5133753781276677494" resolveInfo="WaitAfterVentricularEvent" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5133753781276677496" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5133753781276677271" resolveInfo="AS" />
+          </node>
+          <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.LessEqualsExpression" typeId="mj1l.8860443239512147451" id="5133753781276677497" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677498" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677374" resolveInfo="mPVARP" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677499" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677316" resolveInfo="timeSinceVEvent" />
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="5133753781276677500" nodeInfo="ng">
+            <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="5133753781276677501" nodeInfo="ng" />
+            <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="5133753781276677502" nodeInfo="ng">
+              <link role="target" roleId="26ao.439567521322959431" targetNodeId="172131536229023729" resolveInfo="ignorePvarpSens" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5133753781276677503" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="5133753781276677558" resolveInfo="WaitAfterArtrialEvent" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5133753781276677504" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5133753781276677271" resolveInfo="AS" />
+          </node>
+          <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="5133753781276677505" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677506" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677374" resolveInfo="mPVARP" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677507" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677316" resolveInfo="timeSinceVEvent" />
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="5133753781276677508" nodeInfo="ng">
+            <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="5133753781276677509" nodeInfo="ng" />
+            <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="5133753781276677510" nodeInfo="ng">
+              <link role="target" roleId="26ao.439567521322959431" targetNodeId="172131536229023675" resolveInfo="inhibitAtrial" />
+            </node>
+          </node>
+          <node role="actions" roleId="clqz.1270667558200946447" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781276677511" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677512" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5133753781276677513" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781276677514" nodeInfo="ng">
+                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="0" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677515" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677309" resolveInfo="timeSinceAEvent" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.SendOutEventStatement" typeId="clqz.8786207748510013887" id="5133753781276677516" nodeInfo="ng">
+              <link role="event" roleId="clqz.8786207748510013889" targetNodeId="5133753781276677292" resolveInfo="APN" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="5133753781276677517" nodeInfo="ng" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5133753781276677518" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="5133753781276677494" resolveInfo="WaitAfterVentricularEvent" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5133753781276677519" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5133753781276677276" resolveInfo="VS" />
+          </node>
+          <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.LessEqualsExpression" typeId="mj1l.8860443239512147451" id="5133753781276677520" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677521" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677367" resolveInfo="mVRP" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677522" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677316" resolveInfo="timeSinceVEvent" />
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="5133753781276677523" nodeInfo="ng">
+            <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="5133753781276677524" nodeInfo="ng" />
+            <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="5133753781276677525" nodeInfo="ng">
+              <link role="target" roleId="26ao.439567521322959431" targetNodeId="172131536229023717" resolveInfo="ignoreVrpSens" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5133753781276677526" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="5133753781276677494" resolveInfo="WaitAfterVentricularEvent" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5133753781276677527" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5133753781276677276" resolveInfo="VS" />
+          </node>
+          <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="5133753781276677528" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677529" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677367" resolveInfo="mVRP" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677530" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677316" resolveInfo="timeSinceVEvent" />
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677531" nodeInfo="ng">
+            <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677532" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677533" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677534" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Should not happen! Maybe VRP has to be increased." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="actions" roleId="clqz.1270667558200946447" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781276677535" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.SendOutEventStatement" typeId="clqz.8786207748510013887" id="5133753781276677536" nodeInfo="ng">
+              <link role="event" roleId="clqz.8786207748510013889" targetNodeId="5133753781276677303" resolveInfo="SignalError" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="5133753781276677537" nodeInfo="ng" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="5133753781276677538" nodeInfo="ng" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5133753781276677539" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="5133753781276677494" resolveInfo="WaitAfterVentricularEvent" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5133753781276677540" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5133753781276677265" resolveInfo="tick" />
+          </node>
+          <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="5133753781276677541" nodeInfo="ng">
+            <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677542" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677316" resolveInfo="timeSinceVEvent" />
+            </node>
+            <node role="right" roleId="mj1l.8860443239512128065" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677543" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677346" resolveInfo="mAEI" />
+            </node>
+          </node>
+          <node role="actions" roleId="clqz.1270667558200946447" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781276677544" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677545" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PreIncrementExpression" typeId="mj1l.4375898003726285487" id="5133753781276677546" nodeInfo="ng">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677547" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677309" resolveInfo="timeSinceAEvent" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677548" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PreIncrementExpression" typeId="mj1l.4375898003726285487" id="5133753781276677549" nodeInfo="ng">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677550" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677316" resolveInfo="timeSinceVEvent" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="5133753781276677551" nodeInfo="ng" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5133753781276677552" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="5133753781276677473" resolveInfo="PaceArtrial" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5133753781276677553" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5133753781276677265" resolveInfo="tick" />
+          </node>
+          <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="5133753781276677554" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677555" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677346" resolveInfo="mAEI" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677556" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677316" resolveInfo="timeSinceVEvent" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5133753781276677557" nodeInfo="ng" />
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.State" typeId="clqz.5778488248013533839" id="5133753781276677558" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="WaitAfterArtrialEvent" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5133753781276677559" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="5133753781276677558" resolveInfo="WaitAfterArtrialEvent" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5133753781276677560" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5133753781276677271" resolveInfo="AS" />
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677561" nodeInfo="ng">
+            <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677562" nodeInfo="ng">
+              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677563" nodeInfo="ng">
+                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677564" nodeInfo="ng">
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="Should not happen, under the specified requirements" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="actions" roleId="clqz.1270667558200946447" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781276677565" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.SendOutEventStatement" typeId="clqz.8786207748510013887" id="5133753781276677566" nodeInfo="ng">
+              <link role="event" roleId="clqz.8786207748510013889" targetNodeId="5133753781276677303" resolveInfo="SignalError" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="5133753781276677567" nodeInfo="ng" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5133753781276677568" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="5133753781276677494" resolveInfo="WaitAfterVentricularEvent" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5133753781276677569" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5133753781276677276" resolveInfo="VS" />
+          </node>
+          <node role="actions" roleId="clqz.1270667558200946447" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781276677570" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677571" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="5133753781276677572" nodeInfo="ng">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5133753781276677573" nodeInfo="ng">
+                  <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
+                  <property name="value" nameId="mj1l.2212975673976043696" value="2" />
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677574" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677316" resolveInfo="timeSinceVEvent" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="clqz.SendOutEventStatement" typeId="clqz.8786207748510013887" id="5133753781276677575" nodeInfo="ng">
+              <link role="event" roleId="clqz.8786207748510013889" targetNodeId="5133753781276677297" resolveInfo="VPN" />
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="5133753781276677576" nodeInfo="ng">
+            <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="5133753781276677577" nodeInfo="ng" />
+            <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="5133753781276677578" nodeInfo="ng">
+              <link role="target" roleId="26ao.439567521322959431" targetNodeId="172131536229023711" resolveInfo="inhibitVentricular" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="5133753781276677579" nodeInfo="ng" />
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5133753781276677580" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="5133753781276677558" resolveInfo="WaitAfterArtrialEvent" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5133753781276677581" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5133753781276677265" resolveInfo="tick" />
+          </node>
+          <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="5133753781276677582" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677583" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677353" resolveInfo="mAVI" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677584" nodeInfo="ng">
+              <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677309" resolveInfo="timeSinceAEvent" />
+            </node>
+          </node>
+          <node role="actions" roleId="clqz.1270667558200946447" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781276677585" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677586" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PreIncrementExpression" typeId="mj1l.4375898003726285487" id="5133753781276677587" nodeInfo="ng">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677588" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677309" resolveInfo="timeSinceAEvent" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677589" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PreIncrementExpression" typeId="mj1l.4375898003726285487" id="5133753781276677590" nodeInfo="ng">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677591" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677316" resolveInfo="timeSinceVEvent" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="5133753781276677592" nodeInfo="ng">
+            <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="5133753781276677593" nodeInfo="ng" />
+            <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="5133753781276677594" nodeInfo="ng">
+              <link role="target" roleId="26ao.439567521322959431" targetNodeId="172131536229023681" resolveInfo="atrialToVentricular" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5133753781276677595" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="5133753781276677558" resolveInfo="WaitAfterArtrialEvent" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5133753781276677596" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5133753781276677265" resolveInfo="tick" />
+          </node>
+          <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="5133753781276677597" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="5133753781276677598" nodeInfo="ng">
+              <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677599" nodeInfo="ng">
+                <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677316" resolveInfo="timeSinceVEvent" />
+              </node>
+              <node role="right" roleId="mj1l.8860443239512128065" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677600" nodeInfo="ng">
+                <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677360" resolveInfo="mURI" />
+              </node>
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="5133753781276677601" nodeInfo="ng">
+              <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677602" nodeInfo="ng">
+                <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677309" resolveInfo="timeSinceAEvent" />
+              </node>
+              <node role="right" roleId="mj1l.8860443239512128065" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677603" nodeInfo="ng">
+                <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677353" resolveInfo="mAVI" />
+              </node>
+            </node>
+          </node>
+          <node role="actions" roleId="clqz.1270667558200946447" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="5133753781276677604" nodeInfo="ng">
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677605" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PreIncrementExpression" typeId="mj1l.4375898003726285487" id="5133753781276677606" nodeInfo="ng">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677607" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677309" resolveInfo="timeSinceAEvent" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="5133753781276677608" nodeInfo="ng">
+              <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.PreIncrementExpression" typeId="mj1l.4375898003726285487" id="5133753781276677609" nodeInfo="ng">
+                <node role="expression" roleId="mj1l.7254843406768839760" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677610" nodeInfo="ng">
+                  <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677316" resolveInfo="timeSinceVEvent" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="26ao.TraceAnnotation" typeId="26ao.439567521322928994" id="5133753781276677611" nodeInfo="ng">
+            <node role="tracekind" roleId="26ao.4577779292081946444" type="26ao.ImplementsTraceKind" typeId="26ao.439567521322929003" id="5133753781276677612" nodeInfo="ng" />
+            <node role="refs" roleId="26ao.4577779292081946445" type="75wo.RequirementRef" typeId="75wo.439567521322984797" id="5133753781276677613" nodeInfo="ng">
+              <link role="target" roleId="26ao.439567521322959431" targetNodeId="172131536229023693" resolveInfo="respectURI" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.Transition" typeId="clqz.5778488248013533883" id="5133753781276677614" nodeInfo="ng">
+          <link role="targetState" roleId="clqz.1270667558201034238" targetNodeId="5133753781276677453" resolveInfo="PaceVentricular" />
+          <node role="trigger" roleId="clqz.3670856444174351950" type="clqz.Trigger" typeId="clqz.1786180596061233739" id="5133753781276677615" nodeInfo="ng">
+            <link role="event" roleId="clqz.8951398808641876049" targetNodeId="5133753781276677265" resolveInfo="tick" />
+          </node>
+          <node role="guard" roleId="clqz.1270667558200943847" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="5133753781276677616" nodeInfo="ng">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="5133753781276677617" nodeInfo="ng">
+              <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677618" nodeInfo="ng">
+                <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677316" resolveInfo="timeSinceVEvent" />
+              </node>
+              <node role="right" roleId="mj1l.8860443239512128065" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677619" nodeInfo="ng">
+                <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677360" resolveInfo="mURI" />
+              </node>
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="5133753781276677620" nodeInfo="ng">
+              <node role="left" roleId="mj1l.8860443239512128064" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677621" nodeInfo="ng">
+                <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677309" resolveInfo="timeSinceAEvent" />
+              </node>
+              <node role="right" roleId="mj1l.8860443239512128065" type="clqz.StatemachineVarRef" typeId="clqz.1786180596061383227" id="5133753781276677622" nodeInfo="ng">
+                <link role="var" roleId="clqz.1786180596061383228" targetNodeId="5133753781276677353" resolveInfo="mAVI" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="clqz.4249345261280348989" type="clqz.EmptyStateContents" typeId="clqz.4753668641245811355" id="5133753781276677623" nodeInfo="ng" />
+      </node>
+      <node role="contents" roleId="clqz.7835233251114737454" type="clqz.EmptyStatemachineContent" typeId="clqz.8927638623067326788" id="5133753781276677624" nodeInfo="ng" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="5133753781276677625" nodeInfo="ng">
+        <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="5133753781276677626" nodeInfo="ng">
+          <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="5133753781276677627" nodeInfo="ng">
+            <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="5133753781276677628" nodeInfo="ng">
+              <property name="escapedValue" nameId="87nw.2557074442922438158" value="This state machine implements a DDD pacing logic. \n\nBasic background information:\nA heart has two atria and two ventricles. The pacemaker paces both atria\nat the same time. It paces both ventricles at the same time as well. So the\nmachine has AP event to make an Atrial Pace - for both atria, and VP event to \nmake a Ventricular Pace - for both ventricles.\n\nWhy is it called DDD? First D means that it paces atria and ventricles - dual \npacing. Second D means that it senses both atria and ventricles - dual sensing. \nAnd last D means dual functionality - it can artificially pace or inhibit, \nif a natural pace has been detected." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="x27k.6437088627575722833" type="x27k.EmptyModuleContent" typeId="x27k.8934095934011938595" id="5133753781276678099" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="empty_1381414235189_30" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="5133753781276678101" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="172131536229023644" resolveInfo="DDDRequirements" />
+    </node>
+    <node role="imports" roleId="x27k.1317894735999304826" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="5133753781277504743" nodeInfo="ng">
+      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="5133753781276223416" resolveInfo="stdio" />
     </node>
   </root>
 </model>
