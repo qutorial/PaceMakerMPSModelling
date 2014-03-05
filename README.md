@@ -1,3 +1,5 @@
+For the installation, please, read the INSTALL file
+
 (C) 2013-Present Moment, Zaur Molotnikov.
 
 All rights reserved. Redistribution is permitted providing that:
@@ -22,3 +24,5 @@ business interruptions.
 You use this software at your own risk and responsibility.
 We disclaim any warranty and merchantability, any fittness
 for a particular purpose. 
+
+
