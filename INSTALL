@@ -1,0 +1,13 @@
+The pacemaker is now a part of mbeddr project.
+
+If you are on Linux, please use our dedicated Linux installer:
+http://mbeddr.fortiss.org/
+
+Otherwise, please, install mbeddr from github, 
+following the instructions as given in the mbeddr.core repository
+https://github.com/mbeddr/mbeddr.core
+in the user guide. 
+
+A copy of this user guide is also located here in the file:
+mbeddr-userguide.pdf.
+
