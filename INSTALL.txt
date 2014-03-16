@@ -1,0 +1,18 @@
+
+The pacemaker experiment is now a part of mbeddr project.
+
+If you are on Linux, please use our dedicated Linux installer:
+http://mbeddr.fortiss.org/
+
+It should also work for Mac OS X (you might need to install CBMC separately thoug from: http://www.cprover.org/cbmc/)
+
+On Windows, please, install mbeddr from github, 
+following the instructions as given in the mbeddr.core repository
+https://github.com/mbeddr/mbeddr.core
+in the user guide. And use the "fortissStable" branch.
+
+
+
+A copy of this user guide is also located here in the file:
+mbeddr-userguide.pdf.
+
